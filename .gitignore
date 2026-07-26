@@ -4,4 +4,4 @@
 *.log
 *.twm
 *.twd
-NUCLEO
+/NUCLEO
