@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  native-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build native engine
+        run: npm run build
+      - name: Run invariants
+        run: npm test
+      - name: Exercise time-travel demo
+        run: |
+          ./build/timeweaver demo /tmp/timeweaver-ci > /tmp/graph.json
+          ./build/timeweaver validate /tmp/timeweaver-ci
+          node -e "const g=require('/tmp/graph.json'); if(g.nodes.at(-1).status!==2 || g.stats.savedRatio<0.5) process.exit(1)"
+      - name: Run native sanitizers
+        env:
+          ASAN_OPTIONS: detect_leaks=1
+          UBSAN_OPTIONS: print_stacktrace=1
+        run: |
+          make clean
+          make CFLAGS="-O1 -g -std=c11 -Wall -Wextra -Wpedantic -fsanitize=address,undefined -fno-omit-frame-pointer" test

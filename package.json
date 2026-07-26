@@ -1,0 +1,16 @@
+{
+  "name": "gnu-timeweaver",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first time-travel debugger for agent memory",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "node tools/server.mjs",
+    "test": "node tools/test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

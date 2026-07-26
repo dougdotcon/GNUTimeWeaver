@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>GNU TimeWeaver</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">TW</span>
+        <div><strong>GNU TimeWeaver</strong><span>Local memory debugger</span></div>
+      </div>
+      <div class="engine-state"><i></i><span>native mmap</span></div>
+      <button id="reset-button" class="secondary-button" type="button">Reset demo</button>
+    </header>
+
+    <main class="workspace">
+      <aside class="rail" aria-label="Run summary">
+        <section>
+          <p class="eyebrow">Current run</p>
+          <h1>SQL agent failure</h1>
+          <p class="muted">One failed execution and its corrected branch.</p>
+        </section>
+        <dl class="metrics">
+          <div><dt>Checkpoints</dt><dd id="metric-nodes">0</dd></div>
+          <div><dt>Physical pages</dt><dd id="metric-pages">0</dd></div>
+          <div><dt>Memory avoided</dt><dd id="metric-saved">0%</dd></div>
+          <div><dt>Shared refs</dt><dd id="metric-shared">0</dd></div>
+        </dl>
+        <section class="legend" aria-label="Node statuses">
+          <p class="eyebrow">Status</p>
+          <span><i class="success"></i>Completed</span>
+          <span><i class="error"></i>Failed</span>
+          <span><i class="fork"></i>Fork</span>
+          <span><i class="checkpoint"></i>Checkpoint</span>
+        </section>
+      </aside>
+
+      <section class="graph-area" aria-label="State graph">
+        <div class="graph-toolbar">
+          <div><strong>State DAG</strong><span id="graph-caption">Loading mapped checkpoints...</span></div>
+          <span class="head-label">HEAD <b id="head-id">-</b></span>
+        </div>
+        <div id="graph-scroll" class="graph-scroll">
+          <svg id="graph" role="img" aria-label="Directed acyclic graph of agent checkpoints"></svg>
+        </div>
+      </section>
+
+      <aside class="inspector" aria-label="Checkpoint inspector">
+        <div class="inspector-heading">
+          <div><p class="eyebrow">Checkpoint</p><h2 id="node-title">Select a node</h2></div>
+          <span id="node-status" class="status-badge">-</span>
+        </div>
+        <dl class="node-meta">
+          <div><dt>State hash</dt><dd id="node-hash">-</dd></div>
+          <div><dt>Changed pages</dt><dd id="node-pages">-</dd></div>
+          <div><dt>Tokens processed</dt><dd id="node-tokens">-</dd></div>
+          <div><dt>Prefix reused</dt><dd id="node-prefix">-</dd></div>
+        </dl>
+        <label for="prompt-editor">Working prompt</label>
+        <textarea id="prompt-editor" rows="7" spellcheck="false" disabled></textarea>
+        <div class="memory-block">
+          <span>Latent state</span>
+          <pre id="node-memory">Select a checkpoint to inspect its mapped state.</pre>
+        </div>
+        <p id="action-message" class="action-message" aria-live="polite"></p>
+        <button id="fork-button" class="primary-button" type="button" disabled>Fork &amp; resume</button>
+      </aside>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
