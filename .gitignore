@@ -1,4 +1,5 @@
 /build/
+/vendor/
 /.timeweaver/
 /node_modules/
 *.log
