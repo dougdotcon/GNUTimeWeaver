@@ -1,0 +1,1160 @@
+[
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\gcc.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml.c.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml.c",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml.c",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\gcc.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-alloc.c.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-alloc.c",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-alloc.c",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-backend.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-backend.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-backend.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-backend-meta.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-backend-meta.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-backend-meta.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-opt.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-opt.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-opt.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-threading.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-threading.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-threading.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\gcc.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\ggml-quants.c.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-quants.c",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-quants.c",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_COMMIT=\\\"c588c4f47\\\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_OPENMP -DGGML_VERSION=\\\"0.17.0\\\" -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-base.dir\\gguf.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\gguf.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/gguf.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml.dir\\ggml-backend-dl.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-backend-dl.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-backend-dl.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-dl.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml.dir\\ggml-backend-reg.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-backend-reg.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-backend-reg.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu.c.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu.c",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ggml-cpu.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\ggml-cpu.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/ggml-cpu.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\repack.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\repack.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/repack.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\hbm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\hbm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/hbm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\quants.c.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\quants.c",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/quants.c",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\traits.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\traits.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/traits.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\amx\\amx.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\amx\\amx.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/amx/amx.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\amx\\mmq.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\amx\\mmq.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/amx/mmq.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\binary-ops.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\binary-ops.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/binary-ops.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\unary-ops.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\unary-ops.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/unary-ops.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\vec.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\vec.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/vec.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\ops.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\ops.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/ops.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\llamafile\\sgemm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\llamafile\\sgemm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/llamafile/sgemm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\gcc.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\arch\\x86\\quants.c.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\arch\\x86\\quants.c",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/arch/x86/quants.c",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -D_XOPEN_SOURCE=600 -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/.. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -march=native -fopenmp -o llama.cpp\\ggml\\src\\CMakeFiles\\ggml-cpu.dir\\ggml-cpu\\arch\\x86\\repack.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\ggml\\src\\ggml-cpu\\arch\\x86\\repack.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/ggml-cpu/arch/x86/repack.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-adapter.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-adapter.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-adapter.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-adapter.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-arch.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-arch.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-arch.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-arch.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-batch.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-batch.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-batch.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-batch.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-chat.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-chat.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-chat.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-chat.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-context.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-context.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-context.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-context.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-cparams.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-cparams.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-cparams.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-cparams.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-grammar.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-grammar.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-grammar.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-grammar.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-graph.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-graph.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-graph.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-graph.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-hparams.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-hparams.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-hparams.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-hparams.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-impl.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-impl.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-impl.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-impl.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-io.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-io.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-io.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-io.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-kv-cache.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-kv-cache.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-kv-cache.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-kv-cache-iswa.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-kv-cache-iswa.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-kv-cache-iswa.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache-iswa.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-kv-cache-dsa.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-kv-cache-dsa.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-kv-cache-dsa.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache-dsa.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-kv-cache-dsv4.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-kv-cache-dsv4.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-kv-cache-dsv4.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-kv-cache-dsv4.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-memory.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-memory.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-memory.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-memory.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-memory-hybrid.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-memory-hybrid.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-memory-hybrid.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-memory-hybrid.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-memory-hybrid-iswa.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-memory-hybrid-iswa.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-memory-hybrid-iswa.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-memory-hybrid-iswa.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-memory-recurrent.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-memory-recurrent.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-memory-recurrent.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-memory-recurrent.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-mmap.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-mmap.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-mmap.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-mmap.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-model-loader.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-model-loader.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-model-loader.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-model-loader.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-model-saver.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-model-saver.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-model-saver.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-model-saver.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-model.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-model.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-model.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-model.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-quant.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-quant.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-quant.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-quant.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-sampler.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-sampler.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-sampler.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-sampler.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\llama-vocab.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\llama-vocab.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/llama-vocab.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/llama-vocab.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\unicode-data.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\unicode-data.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/unicode-data.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/unicode-data.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\unicode.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\unicode.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/unicode.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/unicode.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\afmoe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\afmoe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/afmoe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/afmoe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\apertus.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\apertus.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/apertus.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/apertus.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\arcee.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\arcee.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/arcee.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/arcee.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\arctic.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\arctic.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/arctic.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/arctic.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\arwkv7.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\arwkv7.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/arwkv7.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/arwkv7.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\baichuan.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\baichuan.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/baichuan.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/baichuan.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\bailingmoe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\bailingmoe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/bailingmoe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/bailingmoe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\bailingmoe2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\bailingmoe2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/bailingmoe2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/bailingmoe2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\bert.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\bert.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/bert.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/bert.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\bitnet.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\bitnet.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/bitnet.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/bitnet.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\bloom.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\bloom.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/bloom.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/bloom.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\chameleon.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\chameleon.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/chameleon.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/chameleon.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\chatglm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\chatglm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/chatglm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/chatglm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\codeshell.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\codeshell.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/codeshell.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/codeshell.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\cogvlm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\cogvlm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/cogvlm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/cogvlm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\cohere2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\cohere2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/cohere2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/cohere2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\cohere2moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\cohere2moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/cohere2moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/cohere2moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\command-r.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\command-r.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/command-r.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/command-r.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\dbrx.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\dbrx.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/dbrx.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/dbrx.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\deci.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\deci.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/deci.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/deci.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\deepseek.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\deepseek.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/deepseek.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\deepseek2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\deepseek2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/deepseek2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\deepseek2ocr.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\deepseek2ocr.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/deepseek2ocr.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek2ocr.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\deepseek32.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\deepseek32.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/deepseek32.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek32.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\deepseek4.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\deepseek4.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/deepseek4.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/deepseek4.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\delta-net-base.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\delta-net-base.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/delta-net-base.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/delta-net-base.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\dflash.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\dflash.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/dflash.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/dflash.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\dots1.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\dots1.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/dots1.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/dots1.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\dream.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\dream.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/dream.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/dream.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\eagle3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\eagle3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/eagle3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/eagle3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\ernie4-5-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\ernie4-5-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/ernie4-5-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/ernie4-5-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\ernie4-5.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\ernie4-5.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/ernie4-5.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/ernie4-5.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\eurobert.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\eurobert.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/eurobert.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/eurobert.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\exaone-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\exaone-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/exaone-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/exaone-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\exaone.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\exaone.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/exaone.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/exaone.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\exaone4.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\exaone4.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/exaone4.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/exaone4.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\falcon-h1.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\falcon-h1.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/falcon-h1.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/falcon-h1.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\falcon.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\falcon.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/falcon.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/falcon.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gemma-embedding.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gemma-embedding.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gemma-embedding.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gemma-embedding.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gemma.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gemma.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gemma.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gemma.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gemma2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gemma2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gemma2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gemma2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gemma3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gemma3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gemma3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gemma3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gemma3n.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gemma3n.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gemma3n.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gemma3n.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gemma4-assistant.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gemma4-assistant.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gemma4-assistant.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gemma4-assistant.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gemma4.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gemma4.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gemma4.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gemma4.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\glm-dsa.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\glm-dsa.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/glm-dsa.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/glm-dsa.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\glm4-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\glm4-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/glm4-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/glm4-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\glm4.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\glm4.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/glm4.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/glm4.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gpt2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gpt2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gpt2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gpt2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\gptneox.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\gptneox.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/gptneox.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/gptneox.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\granite-hybrid.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\granite-hybrid.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/granite-hybrid.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/granite-hybrid.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\granite-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\granite-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/granite-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/granite-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\granite.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\granite.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/granite.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/granite.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\grok.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\grok.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/grok.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/grok.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\grovemoe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\grovemoe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/grovemoe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/grovemoe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\hunyuan-dense.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\hunyuan-dense.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/hunyuan-dense.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/hunyuan-dense.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\hunyuan-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\hunyuan-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/hunyuan-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/hunyuan-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\hunyuan-vl.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\hunyuan-vl.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/hunyuan-vl.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/hunyuan-vl.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\hy-v3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\hy-v3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/hy-v3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/hy-v3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\internlm2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\internlm2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/internlm2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/internlm2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\jais.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\jais.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/jais.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/jais.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\jais2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\jais2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/jais2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/jais2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\jamba.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\jamba.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/jamba.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/jamba.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\jina-bert-v2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\jina-bert-v2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/jina-bert-v2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/jina-bert-v2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\jina-bert-v3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\jina-bert-v3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/jina-bert-v3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/jina-bert-v3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\kimi-linear.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\kimi-linear.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/kimi-linear.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/kimi-linear.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\laguna.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\laguna.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/laguna.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/laguna.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\lfm2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\lfm2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/lfm2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/lfm2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\lfm2moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\lfm2moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/lfm2moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/lfm2moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\llada-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\llada-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/llada-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/llada-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\llada.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\llada.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/llada.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/llada.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\llama-embed.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\llama-embed.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/llama-embed.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/llama-embed.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\llama.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\llama.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/llama.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/llama.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\llama4.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\llama4.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/llama4.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/llama4.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\maincoder.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\maincoder.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/maincoder.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/maincoder.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mamba-base.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mamba-base.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mamba-base.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mamba-base.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mamba.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mamba.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mamba.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mamba.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mamba2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mamba2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mamba2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mamba2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mellum.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mellum.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mellum.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mellum.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mimo2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mimo2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mimo2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mimo2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\minicpm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\minicpm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/minicpm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/minicpm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\minicpm3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\minicpm3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/minicpm3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/minicpm3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\minimax-m2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\minimax-m2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/minimax-m2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/minimax-m2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mistral3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mistral3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mistral3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mistral3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mistral4.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mistral4.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mistral4.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mistral4.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\modern-bert.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\modern-bert.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/modern-bert.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/modern-bert.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\mpt.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\mpt.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/mpt.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/mpt.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\nemotron-h-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\nemotron-h-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/nemotron-h-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/nemotron-h-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\nemotron-h.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\nemotron-h.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/nemotron-h.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/nemotron-h.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\nemotron.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\nemotron.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/nemotron.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/nemotron.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\neo-bert.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\neo-bert.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/neo-bert.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/neo-bert.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\nomic-bert-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\nomic-bert-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/nomic-bert-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/nomic-bert-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\nomic-bert.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\nomic-bert.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/nomic-bert.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/nomic-bert.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\olmo.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\olmo.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/olmo.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/olmo.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\olmo2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\olmo2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/olmo2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/olmo2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\olmoe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\olmoe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/olmoe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/olmoe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\openai-moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\openai-moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/openai-moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/openai-moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\openelm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\openelm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/openelm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/openelm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\orion.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\orion.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/orion.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/orion.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\paddleocr.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\paddleocr.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/paddleocr.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/paddleocr.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\pangu-embed.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\pangu-embed.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/pangu-embed.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/pangu-embed.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\phi2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\phi2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/phi2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/phi2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\phi3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\phi3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/phi3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/phi3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\phimoe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\phimoe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/phimoe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/phimoe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\plamo.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\plamo.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/plamo.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/plamo.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\plamo2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\plamo2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/plamo2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/plamo2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\plamo3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\plamo3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/plamo3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/plamo3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\plm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\plm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/plm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/plm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen2moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen2moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen2moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen2moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen2vl.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen2vl.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen2vl.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen2vl.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen35.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen35.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen35.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen35.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen35moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen35moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen35moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen35moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen3moe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen3moe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen3moe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3moe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen3next.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen3next.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen3next.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3next.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen3vl.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen3vl.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen3vl.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3vl.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\qwen3vlmoe.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\qwen3vlmoe.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/qwen3vlmoe.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/qwen3vlmoe.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\refact.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\refact.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/refact.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/refact.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\rnd1.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\rnd1.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/rnd1.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/rnd1.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\rwkv6-base.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\rwkv6-base.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/rwkv6-base.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv6-base.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\rwkv6.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\rwkv6.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/rwkv6.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv6.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\rwkv6qwen2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\rwkv6qwen2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/rwkv6qwen2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv6qwen2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\rwkv7-base.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\rwkv7-base.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/rwkv7-base.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv7-base.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\rwkv7.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\rwkv7.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/rwkv7.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/rwkv7.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\seed-oss.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\seed-oss.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/seed-oss.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/seed-oss.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\smallthinker.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\smallthinker.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/smallthinker.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/smallthinker.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\smollm3.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\smollm3.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/smollm3.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/smollm3.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\stablelm.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\stablelm.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/stablelm.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/stablelm.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\starcoder.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\starcoder.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/starcoder.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/starcoder.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\starcoder2.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\starcoder2.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/starcoder2.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/starcoder2.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\step35.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\step35.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/step35.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/step35.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\t5.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\t5.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/t5.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/t5.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\t5encoder.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\t5encoder.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/t5encoder.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/t5encoder.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\talkie.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\talkie.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/talkie.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/talkie.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\wavtokenizer-dec.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\wavtokenizer-dec.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/wavtokenizer-dec.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/wavtokenizer-dec.cpp.obj"
+},
+{
+  "directory": "D:/GNUTimeWeaver/build-real",
+  "command": "C:\\Users\\CLIENTE\\scoop\\apps\\gcc\\current\\bin\\g++.exe -DGGML_USE_CPU -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -ID:/GNUTimeWeaver/vendor/llama.cpp/src/. -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o llama.cpp\\src\\CMakeFiles\\llama.dir\\models\\xverse.cpp.obj -c D:\\GNUTimeWeaver\\vendor\\llama.cpp\\src\\models\\xverse.cpp",
+  "file": "D:/GNUTimeWeaver/vendor/llama.cpp/src/models/xverse.cpp",
+  "output": "D:/GNUTimeWeaver/build-real/llama.cpp/src/CMakeFiles/llama.dir/models/xverse.cpp.obj"
+}
+]

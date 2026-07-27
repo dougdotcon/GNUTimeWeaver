@@ -1,0 +1,10 @@
+prefix=C:/Program Files (x86)/timeweaver
+exec_prefix=C:/Program Files (x86)/timeweaver
+libdir=C:/Program Files (x86)/timeweaver/lib
+includedir=C:/Program Files (x86)/timeweaver/include
+
+Name: llama
+Description: Port of Facebook's LLaMA model in C/C++
+Version: 0.0.10103
+Libs: -L${libdir} -lggml -lggml-base -lllama
+Cflags: -I${includedir}
