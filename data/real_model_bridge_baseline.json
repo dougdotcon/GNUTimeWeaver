@@ -1,0 +1,10 @@
+{
+  "status": "ADAPTER_PROTOCOL_READY_NO_REAL_MODEL",
+  "date": "2026-07-26",
+  "git_commit": "b81e1a863928cbfa0536a4d240fb3ad5f32576b9",
+  "commands": {"npm run build": "pass", "npm test": "pass", "cmake": "not installed"},
+  "host": {"os": "Windows", "node": "v26.5.0", "compiler": "gcc 15.2.0"},
+  "runtime": null,
+  "model": null,
+  "known_limits": {"checkpoint_bytes": 524288, "nodes": 2048, "arena_bytes": 67108864}
+}

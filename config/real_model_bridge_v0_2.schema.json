@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GNU TimeWeaver Real Model Bridge v0.2",
+  "type": "object",
+  "required": ["schema_version", "protocol_id", "runtime", "model", "adapter", "capabilities", "acceptance"],
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "protocol_id": {"type": "string", "pattern": "^timeweaver-real-model-bridge-v0\\.2:[0-9a-f]{64}$"},
+    "runtime": {"type": "object", "required": ["name", "integration", "backend"]},
+    "model": {"type": "object", "required": ["source", "required_format"]},
+    "adapter": {"type": "object", "required": ["abi_version", "checkpoint_kind"]},
+    "capabilities": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "acceptance": {"type": "object", "required": ["required", "statuses"]}
+  },
+  "additionalProperties": true
+}

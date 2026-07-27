@@ -37,3 +37,7 @@ npm start
 The MVP is accepted when the tests pass, the demo reports a failed and a
 successful branch, validation succeeds, and the browser can create another
 successful fork through `/api/fork`.
+# Phase boundary
+
+This MVP does not load GGUF models or generate model tokens. Those claims belong
+to the separately preregistered llama.cpp bridge and require a real-model run.

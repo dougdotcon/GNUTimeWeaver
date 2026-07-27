@@ -163,3 +163,8 @@ memória mutado, criar um fork, restaurar os blocos KV anteriores e continuar a
 geração com medição independente de que o prefixo não foi reprocessado. O MVP
 atual é a fundação verificável para esse teste; ele não deve ser apresentado
 como se já tivesse atingido esse critério.
+# Real-model bridge status
+
+The next milestone is CPU llama.cpp checkpoint/restore/fork proof. Until a
+pinned runtime and explicit `TIMEWEAVER_MODEL_PATH` are available, the formal
+status is `ADAPTER_PROTOCOL_READY_NO_REAL_MODEL`.

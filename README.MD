@@ -9,6 +9,14 @@ This repository contains an operational CPU/mmap MVP. It proves the storage,
 fork, checkout, persistence, and debugger workflow before coupling the same ABI
 to a real inference engine's KV cache.
 
+## Real model bridge v0.2
+
+The CPU bridge scaffolding targets a pinned, externally supplied `llama.cpp`
+tree and stores `opaque_runtime_state`; it is currently
+`ADAPTER_PROTOCOL_READY_NO_REAL_MODEL` until `TIMEWEAVER_MODEL_PATH` points to a
+local GGUF and the runtime commit is recorded. vLLM block-native KV and CUDA/
+VRAM work remain future phases.
+
 ## Run the MVP
 
 Requirements:

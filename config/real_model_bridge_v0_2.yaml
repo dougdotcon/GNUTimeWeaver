@@ -1,0 +1,38 @@
+schema_version: "0.2"
+protocol_id: "timeweaver-real-model-bridge-v0.2:5e3c0592fba5c1a574e628d1ae4d93d5fb7794830a937ed4844b2705363d114c"
+runtime:
+  name: llama.cpp
+  repository: https://github.com/ggml-org/llama.cpp
+  integration: externally_provided_source_tree
+  commit: null
+  api_version: "unresolved-until-pinned"
+  backend: cpu
+  build_type: release
+model:
+  source: TIMEWEAVER_MODEL_PATH
+  distribution: user-provided
+  required_format: GGUF
+adapter:
+  abi_version: "tw-runtime-adapter/0.2"
+  checkpoint_kind: opaque_runtime_state
+  state_scope: sequence
+safe_points: [after_tokenization, after_prefill, after_generated_token, after_agent_step, before_new_suffix]
+capabilities:
+  real_model_inference: true
+  sequence_state_save: true
+  sequence_state_restore: true
+  deterministic_resume: conditional
+  append_suffix_fork: true
+  arbitrary_prefix_mutation: false
+  cpu_backend: true
+  gpu_backend: false
+  block_native_kv: false
+  zero_copy_restore: false
+acceptance:
+  required: [real_model, checkpoint, close_reopen, zero_prefix_decode_after_restore, fork, compatibility_validation]
+  statuses: [REAL_MODEL_BRIDGE_VERIFIED, REAL_MODEL_BRIDGE_VERIFIED_WITH_LIMITATIONS, REAL_MODEL_BRIDGE_NOT_VERIFIED, ADAPTER_PROTOCOL_READY_NO_REAL_MODEL]
+limits:
+  max_checkpoint_bytes: 524288
+  no_automatic_weight_download: true
+  no_cuda: true
+  no_vllm: true

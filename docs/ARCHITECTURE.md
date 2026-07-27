@@ -72,3 +72,8 @@ flushes can leak unreachable pages. It cannot make an existing node refer to
 partially written content because metadata is flushed last. Concurrent writers,
 garbage collection, compaction, encryption at rest, and untrusted workspace
 parsing are outside the v1 boundary.
+# Runtime bridge boundary (v0.2)
+
+The existing C11 storage ABI remains unchanged. `llama.cpp` is isolated behind
+the versioned C adapter in `src/runtime` and `src/adapters/llama_cpp`; its
+serialized state is an opaque content-addressed object, not block-native KV.

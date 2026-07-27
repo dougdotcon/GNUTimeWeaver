@@ -1,0 +1,1 @@
+{"runtimes":[{"name":"llama.cpp","status":"declared_not_pinned","integration":"externally_provided_source_tree","backend":"cpu","adapter_abi":"tw-runtime-adapter/0.2"}]}
