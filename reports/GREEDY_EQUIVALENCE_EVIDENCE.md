@@ -1,4 +1,4 @@
 # Greedy equivalence evidence
 
-Frozen acceptance sampler is greedy, temperature 0, seed 42. Token, text and
-stop-reason equality are pending a real run.
+The smoke replay and restored path produced 16 identical greedy token IDs:
+`greedy_token_ids_equal=true`. Acceptance-model equivalence is still pending.

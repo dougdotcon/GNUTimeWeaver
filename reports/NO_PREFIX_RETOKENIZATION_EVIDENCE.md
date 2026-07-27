@@ -1,4 +1,4 @@
 # Prefix retokenization evidence
 
-Required metric after restore: `prefix_tokenizer_invocations_after_restore == 0`.
-Result: not executed; no model/runtime supplied.
+Smoke result: `prefix_tokenizer_invocations_after_restore == 0` for restore and
+both branches. Only new suffixes were tokenized.

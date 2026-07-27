@@ -1,4 +1,5 @@
 # Prefix redecode evidence
 
-Required metric after restore: `prefix_tokens_decoded_after_restore == 0`.
-Result: not executed; no model/runtime supplied.
+Smoke result: `prefix_tokens_decoded_after_restore == 0` for restore and both
+branches. The checkpoint stores the greedy pending token separately so
+continuation can decode new generated work without replaying a prefix token.
