@@ -1,0 +1,30 @@
+schema_version: "0.2.1"
+protocol_id: "timeweaver-real-model-bridge-v0.2.1:0a3f090dbd76c9d9de0e1e9f7cf3f1d2e9a9ed9b0ef14a0c46c9ecb8fd955a69"
+runtime:
+  name: llama.cpp
+  release: b10103
+  commit: c588c4f
+  source: TIMEWEAVER_LLAMA_CPP_DIR
+  backend: cpu
+  dirty_tree: reject
+models:
+  smoke:
+    source: TIMEWEAVER_MODEL_PATH
+    filename: stories15M-q4_0.gguf
+    acceptance_authority: false
+  acceptance:
+    source: TIMEWEAVER_MODEL_PATH
+    filename: qwen2.5-coder-0.5b-q8_0.gguf
+    acceptance_authority: true
+execution:
+  sampler: greedy
+  temperature: 0
+  seed: 42
+  prefix_tokens: {smoke: 128, acceptance: 512}
+  checkpoint_kind: opaque_runtime_state
+  state_api: [llama_state_seq_get_size, llama_state_seq_get_data, llama_state_seq_set_data]
+  device_state_flags: disabled
+acceptance:
+  prefix_tokenizer_invocations_after_restore: 0
+  prefix_tokens_decoded_after_restore: 0
+  deterministic_token_ids: true

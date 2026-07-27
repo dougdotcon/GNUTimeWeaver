@@ -1,0 +1,1 @@
+{"status":"ADAPTER_PROTOCOL_READY_NO_REAL_MODEL","runtime":{"name":"llama.cpp","release":"b10103","commit":"c588c4f"},"smoke":null,"acceptance":null,"tests":{"executed":0,"passed":0,"failed":0,"skipped_missing_dependency":1,"skipped_missing_model":1}}
