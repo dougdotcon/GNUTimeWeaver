@@ -1,0 +1,4 @@
+prefix_tokens,restored_prefix_tokens,prefix_tokenizer_invocations_after_restore,prefix_tokens_tokenized_after_restore,prefix_tokens_decoded_after_restore,state_bytes,greedy_equal
+512,512,0,0,0,6298200,true
+1024,1024,0,0,0,12595800,true
+2048,2048,0,0,0,25191000,true

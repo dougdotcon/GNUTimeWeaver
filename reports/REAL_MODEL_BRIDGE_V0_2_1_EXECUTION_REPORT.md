@@ -1,6 +1,6 @@
 # v0.2.1 execution report
 
-Status: `SMOKE_REAL_MODEL_BRIDGE_PASSED_NO_ACCEPTANCE_MODEL`. The runtime tree is
+Status: `REAL_MODEL_BRIDGE_VERIFIED_WITH_LIMITATIONS`. The runtime tree is
 provisioned and verified clean at
 `c588c4f47683e73ad2d69f50480bec6cc85fd0f7`; both GGUF files are present.
 
@@ -30,4 +30,14 @@ Branches A and B restored the same parent, decoded zero prefix tokens, tokenized
 The state was published content-addressed with temp write, fsync, SHA-256
 validation, atomic rename, manifest, then node. Faults at mid-write,
 before-rename, after-rename and before-node-publish produced no node referencing
-partial state. Acceptance remains unexecuted.
+partial state.
+
+The explicit `timeweaver_real_acceptance` target then repeated the proof with
+the authorized Qwen2.5-Coder 0.5B Q8_0 model. Prefixes 512, 1024 and 2048 all
+restored exactly, decoded zero prefix tokens after restore, matched 16 greedy
+continuation token IDs, and validated positions 0..L-1. Acceptance branches,
+cross-process reopen, Qwen object publication and four fault points passed.
+
+Limitations are CPU/Windows/MinGW-only execution, `GGML_CPU_REPACK=OFF`,
+opaque full-sequence state rather than native KV blocks, and an incomplete
+exhaustive compatibility/fuzz matrix.

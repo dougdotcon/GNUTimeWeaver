@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "kind": "opaque_runtime_state",
+  "sha256": "30e03267fd85e32d5c6b70899e5ad60cf1e3f2655b5c8e1de0aca76fbee06da9",
+  "bytes": 25191000,
+  "object": "runtime/objects/30e03267fd85e32d5c6b70899e5ad60cf1e3f2655b5c8e1de0aca76fbee06da9.bin",
+  "published_at": "2026-07-27T06:24:16.858Z"
+}

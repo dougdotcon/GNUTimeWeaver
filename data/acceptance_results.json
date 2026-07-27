@@ -1,0 +1,14 @@
+{
+  "status": "REAL_MODEL_BRIDGE_VERIFIED_WITH_LIMITATIONS",
+  "profile": "acceptance",
+  "runtime_commit": "c588c4f47683e73ad2d69f50480bec6cc85fd0f7",
+  "model_sha256": "d0f8cd6c49bab52a0abdbe47948518b1f4d9b1a8a2a6825099cea31cea10ac56",
+  "model_metadata": {"architecture":"qwen2","context_length":32768,"quantization":"Q8_0","tokenizer":"gpt2","bos":151643,"eos":151643},
+  "lengths": [
+    {"prefix":512,"restored":512,"prefix_tokenizer_after_restore":0,"prefix_decode_after_restore":0,"state_bytes":6298200,"greedy_equal":true,"positions":[0,511]},
+    {"prefix":1024,"restored":1024,"prefix_tokenizer_after_restore":0,"prefix_decode_after_restore":0,"state_bytes":12595800,"greedy_equal":true,"positions":[0,1023]},
+    {"prefix":2048,"restored":2048,"prefix_tokenizer_after_restore":0,"prefix_decode_after_restore":0,"state_bytes":25191000,"greedy_equal":true,"positions":[0,2047]}
+  ],
+  "object_store_fault_points_passed": 4,
+  "negative_tests": {"model_not_authorized": true, "state_checksum": true, "cursor_position": true}
+}

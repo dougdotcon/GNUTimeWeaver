@@ -223,6 +223,45 @@ build timeweaver_real_smoke.exe: CXX_EXECUTABLE_LINKER__timeweaver_real_smoke_Re
   TARGET_SUPPORT_DIR = CMakeFiles\timeweaver_real_smoke.dir
 
 # =============================================================================
+# Object build statements for EXECUTABLE target timeweaver_real_acceptance
+
+
+#############################################
+# Order-only phony target for timeweaver_real_acceptance
+
+build cmake_object_order_depends_target_timeweaver_real_acceptance: phony || cmake_object_order_depends_target_ggml cmake_object_order_depends_target_ggml-base cmake_object_order_depends_target_ggml-cpu cmake_object_order_depends_target_llama
+
+build CMakeFiles/timeweaver_real_acceptance.dir/src/adapters/llama_cpp/real_smoke_runner.cpp.obj: CXX_COMPILER__timeweaver_real_acceptance_unscanned_Release D$:/GNUTimeWeaver/src/adapters/llama_cpp/real_smoke_runner.cpp || cmake_object_order_depends_target_timeweaver_real_acceptance
+  CONFIG = Release
+  DEFINES = -DGGML_USE_CPU -DTIMEWEAVER_PROFILE_ACCEPTANCE=1 -D_WIN32_WINNT=0x0601
+  DEP_FILE = CMakeFiles\timeweaver_real_acceptance.dir\src\adapters\llama_cpp\real_smoke_runner.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG
+  INCLUDES = -ID:/GNUTimeWeaver/vendor/llama.cpp/include -ID:/GNUTimeWeaver/vendor/llama.cpp/src/../include -ID:/GNUTimeWeaver/vendor/llama.cpp/ggml/src/../include
+  OBJECT_DIR = CMakeFiles\timeweaver_real_acceptance.dir
+  OBJECT_FILE_DIR = CMakeFiles\timeweaver_real_acceptance.dir\src\adapters\llama_cpp
+  TARGET_SUPPORT_DIR = CMakeFiles\timeweaver_real_acceptance.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target timeweaver_real_acceptance
+
+
+#############################################
+# Link the executable timeweaver_real_acceptance.exe
+
+build timeweaver_real_acceptance.exe: CXX_EXECUTABLE_LINKER__timeweaver_real_acceptance_Release CMakeFiles/timeweaver_real_acceptance.dir/src/adapters/llama_cpp/real_smoke_runner.cpp.obj | llama.cpp/src/libllama.a llama.cpp/ggml/src/ggml.a llama.cpp/ggml/src/ggml-cpu.a llama.cpp/ggml/src/ggml-base.a C$:/Users/CLIENTE/scoop/apps/gcc/15.2.0/lib/libgomp.a C$:/Users/CLIENTE/scoop/apps/gcc/15.2.0/x86_64-w64-mingw32/lib/libmingwthrd.a || llama.cpp/ggml/src/ggml-base.a llama.cpp/ggml/src/ggml-cpu.a llama.cpp/ggml/src/ggml.a llama.cpp/src/libllama.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = llama.cpp/src/libllama.a  llama.cpp/ggml/src/ggml.a  llama.cpp/ggml/src/ggml-cpu.a  llama.cpp/ggml/src/ggml-base.a  C:/Users/CLIENTE/scoop/apps/gcc/15.2.0/lib/libgomp.a  C:/Users/CLIENTE/scoop/apps/gcc/15.2.0/x86_64-w64-mingw32/lib/libmingwthrd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\timeweaver_real_acceptance.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = timeweaver_real_acceptance.exe
+  TARGET_IMPLIB = libtimeweaver_real_acceptance.dll.a
+  TARGET_PDB = timeweaver_real_acceptance.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\timeweaver_real_acceptance.dir
+
+# =============================================================================
 # Object build statements for EXECUTABLE target timeweaver_tests
 
 
@@ -2818,6 +2857,8 @@ build timeweaver_core: phony libtimeweaver_core.a
 
 build timeweaver_llama_adapter: phony libtimeweaver_llama_adapter.a
 
+build timeweaver_real_acceptance: phony timeweaver_real_acceptance.exe
+
 build timeweaver_real_smoke: phony timeweaver_real_smoke.exe
 
 build timeweaver_tests: phony timeweaver_tests.exe
@@ -2830,7 +2871,7 @@ build timeweaver_tests: phony timeweaver_tests.exe
 #############################################
 # Folder: D:/GNUTimeWeaver/build-real
 
-build all: phony libtimeweaver_core.a timeweaver.exe libtimeweaver_llama_adapter.a timeweaver_real_smoke.exe timeweaver_tests.exe
+build all: phony libtimeweaver_core.a timeweaver.exe libtimeweaver_llama_adapter.a timeweaver_real_smoke.exe timeweaver_real_acceptance.exe timeweaver_tests.exe
 
 # =============================================================================
 
