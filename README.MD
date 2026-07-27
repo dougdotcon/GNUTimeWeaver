@@ -17,6 +17,15 @@ tree and stores `opaque_runtime_state`; it is currently
 local GGUF and the runtime commit is recorded. vLLM block-native KV and CUDA/
 VRAM work remain future phases.
 
+## vLLM connector v0.3
+
+The block-native KV protocol is preregistered in
+`config/vllm_block_connector_v0_3.yaml`, with an external Python package under
+`python/timeweaver_vllm`. It currently reports
+`VLLM_CONNECTOR_PROTOCOL_READY_NO_SUPPORTED_ENVIRONMENT`: this Windows host has
+no WSL/Linux distribution, PyTorch, or vLLM. No real block restore or VRAM
+claim is made before the pinned vLLM runtime is executed in Linux/WSL2.
+
 ## Run the MVP
 
 Requirements:

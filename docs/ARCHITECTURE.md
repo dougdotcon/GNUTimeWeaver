@@ -77,3 +77,7 @@ parsing are outside the v1 boundary.
 The existing C11 storage ABI remains unchanged. `llama.cpp` is isolated behind
 the versioned C adapter in `src/runtime` and `src/adapters/llama_cpp`; its
 serialized state is an opaque content-addressed object, not block-native KV.
+
+The v0.3 design adds an external Python connector and Unix-domain daemon
+boundary for immutable KV block objects. Scheduler metadata and worker layer
+transfers remain separate. No vLLM runtime is available on the current host.

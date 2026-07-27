@@ -1,0 +1,27 @@
+schema_version: "0.3"
+protocol_id: "timeweaver-vllm-block-connector-v0.3:5d8e9f3f16e89b1d8042fe5328f531a6080ee51600193b0e678bdc808ad5083d"
+runtime:
+  name: vllm
+  release: v0.26.0
+  expected_commit_prefix: 568afb3
+  source: external_linux_or_wsl2_tree
+  api: KVConnectorBase_V1
+  hash_algorithm: sha256_cbor
+environment:
+  device_profile: cpu
+  tensor_parallel_size: 1
+  pipeline_parallel_size: 1
+  disable_hybrid_kv_cache_manager: true
+model:
+  source: explicit_local_transformers_model
+  candidate: Qwen/Qwen2.5-Coder-0.5B-Instruct
+storage:
+  ipc_protocol: tw-kv-ipc/0.3
+  layout: kv3/objects/<prefix>/<timeweaver_block_key>
+  checkpoint_kind: block_native_kv
+  complete_only_publication: true
+acceptance:
+  required_gates: [G0_ENVIRONMENT_READY, G1_EVENT_LINEAGE_VERIFIED, G2_BLOCK_SAVE_VERIFIED, G3_BLOCK_RESTORE_VERIFIED, G4_CROSS_ENGINE_RESTORE_VERIFIED, G5_FORK_SHARING_VERIFIED]
+  aligned_prefixes: [512, 1024, 2048]
+  unaligned_prefixes: [513, 1031, 2055]
+  failure_policy: fail
