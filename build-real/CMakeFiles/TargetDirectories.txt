@@ -1,6 +1,7 @@
 D:/GNUTimeWeaver/build-real/CMakeFiles/timeweaver_core.dir
 D:/GNUTimeWeaver/build-real/CMakeFiles/timeweaver.dir
 D:/GNUTimeWeaver/build-real/CMakeFiles/timeweaver_llama_adapter.dir
+D:/GNUTimeWeaver/build-real/CMakeFiles/timeweaver_real_smoke.dir
 D:/GNUTimeWeaver/build-real/CMakeFiles/timeweaver_tests.dir
 D:/GNUTimeWeaver/build-real/CMakeFiles/test.dir
 D:/GNUTimeWeaver/build-real/CMakeFiles/edit_cache.dir

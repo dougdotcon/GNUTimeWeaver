@@ -79,6 +79,25 @@ rule CXX_STATIC_LIBRARY_LINKER__timeweaver_llama_adapter_Release
 
 
 #############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__timeweaver_real_smoke_unscanned_Release
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Users\CLIENTE\scoop\apps\gcc\current\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__timeweaver_real_smoke_Release
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Users\CLIENTE\scoop\apps\gcc\current\bin\g++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for compiling C files.
 
 rule C_COMPILER__timeweaver_tests_unscanned_Release

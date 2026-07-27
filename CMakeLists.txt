@@ -44,6 +44,9 @@ if(TIMEWEAVER_WITH_LLAMA_CPP)
         set(GGML_VULKAN OFF CACHE BOOL "" FORCE)
         set(GGML_SYCL OFF CACHE BOOL "" FORCE)
         set(GGML_RPC OFF CACHE BOOL "" FORCE)
+        # b10103's MinGW CPU repacker crashes on the preregistered Q4_0 smoke
+        # model (0xC0000005). The scalar/AVX CPU path is stable for both models.
+        set(GGML_CPU_REPACK OFF CACHE BOOL "" FORCE)
         set(GGML_NATIVE ON CACHE BOOL "" FORCE)
         add_subdirectory("${TIMEWEAVER_LLAMA_CPP_DIR}" "${CMAKE_BINARY_DIR}/llama.cpp" EXCLUDE_FROM_ALL)
     endif()
@@ -55,6 +58,9 @@ if(TIMEWEAVER_WITH_LLAMA_CPP)
     target_compile_definitions(timeweaver_llama_adapter PRIVATE
         TIMEWEAVER_LLAMA_CPP_COMMIT="c588c4f")
     target_link_libraries(timeweaver_llama_adapter PRIVATE llama)
+    add_executable(timeweaver_real_smoke src/adapters/llama_cpp/real_smoke_runner.cpp)
+    target_link_libraries(timeweaver_real_smoke PRIVATE llama)
+    target_include_directories(timeweaver_real_smoke PRIVATE "${TIMEWEAVER_LLAMA_CPP_DIR}/include")
 endif()
 
 enable_testing()
