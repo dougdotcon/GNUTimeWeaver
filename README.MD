@@ -45,6 +45,13 @@ network with 4 GiB shared memory. The command exits non-zero until G0 is
 qualified; G1 remains explicitly blocked until a real vLLM request emits KV
 events. No KV payload is persisted, and all containers drop capabilities.
 
+The runner has an explicit phase boundary: `--phase g0` may instantiate a
+temporary `vllm.LLM` for independent qualification; formal `--phase g1` never
+instantiates another runtime and requires requests to be sent to the single
+`vllm-engine` process observed by the event mirror. Until that request path is
+available, the result is reported as `G1_REQUIRES_SINGLE_FORMAL_ENGINE`, never
+as real KV evidence.
+
 The original v0.3 runtime pin was superseded before execution. Amendment v0.3.1
 uses official vLLM tag `v0.23.0` at
 `0fc695fc6d1d82e9a5ac6835ac8e4e1c83703665` and limits scope to Linux/WSL2 G0

@@ -6,3 +6,6 @@
 *.twm
 *.twd
 /NUCLEO
+/.model-fetch/
+/models/
+/campaign-results/

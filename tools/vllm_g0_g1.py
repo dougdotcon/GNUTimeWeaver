@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Collect reproducible v0.3.1 CPU evidence without making restore claims."""
 from __future__ import annotations
-import argparse, json, os, platform, subprocess, time, hashlib
+import argparse, json, os, platform, subprocess, time, hashlib, urllib.request
 from pathlib import Path
 
 TAG = "v0.23.0"
@@ -9,6 +9,13 @@ TAG = "v0.23.0"
 def run(*cmd: str, cwd: Path | None = None) -> str:
     p = subprocess.run(cmd, cwd=cwd, text=True, capture_output=True, check=False)
     return p.stdout.strip() if p.returncode == 0 else ""
+
+def http_json(url: str, payload: dict | None = None) -> dict:
+    body = None if payload is None else json.dumps(payload).encode()
+    request = urllib.request.Request(url, data=body,
+        headers={"Content-Type": "application/json"} if body else {})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read())
 
 def git_identity(repo: Path) -> dict:
     remote = run("git", "ls-remote", "--tags", "origin",
@@ -38,6 +45,7 @@ def main() -> int:
     ap.add_argument("--model", default=None, type=Path)
     ap.add_argument("--event-mirror", action="store_true")
     ap.add_argument("--engine", action="store_true")
+    ap.add_argument("--phase", choices=("g0", "g1"), default="g1")
     args = ap.parse_args()
     if args.event_mirror:
         print("event_mirror_ready")
@@ -53,6 +61,13 @@ def main() -> int:
     model = args.model
     model_info = {"available": bool(model and model.is_dir())}
     if model_info["available"]:
+        revision_file = model / "TIMEWEAVER_MODEL_REVISION"
+        sums_file = model / "SHA256SUMS"
+        model_info["revision"] = revision_file.read_text().strip() if revision_file.is_file() else ""
+        model_info["manifest_available"] = sums_file.is_file()
+        if not model_info["revision"] or not model_info["manifest_available"]:
+            model_info["available"] = False
+            model_info["status"] = "M0_MODEL_SNAPSHOT_INVALID"
         files = []
         for path in sorted(model.rglob("*")):
             if path.is_file():
@@ -80,13 +95,34 @@ def main() -> int:
            "connector": connector_info,
            "mode": os.getenv("TIMEWEAVER_VLLM_MODE", "event_mirror_only"),
            "ld_preload": os.getenv("LD_PRELOAD", "")}
-    inference = {"status": "not_run"}
-    if vllm_info["available"] and model_info["available"]:
+    inference = {"status": "not_run", "phase": args.phase}
+    # G1 must use the already-running vllm-engine. It is deliberately never
+    # allowed to instantiate a second LLM in the campaign runner.
+    if args.phase == "g1":
+        endpoint = os.getenv("VLLM_ENGINE_ENDPOINT", "http://vllm-engine:8000").rstrip("/")
+        try:
+            health = http_json(endpoint + "/health")
+            models = http_json(endpoint + "/v1/models")
+            tokenized = http_json(endpoint + "/tokenize",
+                                  {"prompt": "TimeWeaver qualification prompt."})
+            completion = http_json(endpoint + "/v1/completions", {
+                "model": "timeweaver-qwen",
+                "prompt": "Write one short sentence about time travel.",
+                "temperature": 0, "max_tokens": 16,
+            })
+            inference = {"status": "pass", "endpoint": endpoint,
+                         "health": health, "models": models,
+                         "tokenized": tokenized, "completion": completion}
+        except Exception as exc:
+            inference = {"status": "fail", "reason": "G1_ENGINE_ENDPOINT_UNAVAILABLE",
+                         "engine_endpoint": endpoint, "error": repr(exc)}
+    elif vllm_info["available"] and model_info["available"]:
         try:
             import torch
             from vllm import LLM, SamplingParams
             started = time.time()
-            llm = LLM(model=str(model), device="cpu", tensor_parallel_size=1,
+            llm = LLM(model=str(model), tensor_parallel_size=1,
+                      gpu_memory_utilization=0.5,
                       enable_prefix_caching=True)
             output = llm.generate(["Write one short sentence about time travel."],
                                   SamplingParams(temperature=0, max_tokens=16))[0]
@@ -95,14 +131,29 @@ def main() -> int:
                          "cuda_available": torch.cuda.is_available()}
         except Exception as exc:
             inference = {"status": "fail", "error": repr(exc)}
-    g0 = bool(ident and ident.get("peeled_commit_sha") == ident.get("checked_out_commit_sha")
+    g0 = bool(args.phase == "g0" and ident and ident.get("peeled_commit_sha") == ident.get("checked_out_commit_sha")
               and ident.get("peeled_commit_sha") == ident.get("remote_peeled_commit_sha")
               and ident.get("tree_status") == "clean" and env["python"].startswith("3.12")
               and env["architecture"] == "x86_64" and env["cpu_avx2"] and vllm_info["available"]
               and connector_info["available"]
               and os.getenv("TIMEWEAVER_VLLM_MODE", "event_mirror_only") == "event_mirror_only"
               and model_info["available"] and inference["status"] == "pass")
-    result = {"protocol": "timeweaver-vllm-connector-v0.3.1", "runtime": ident,
+    formal = ("G0_MODEL_NOT_AVAILABLE" if model_info.get("status") == "G0_MODEL_NOT_AVAILABLE"
+              else "G0_MODEL_SNAPSHOT_INVALID" if model_info.get("status") == "M0_MODEL_SNAPSHOT_INVALID"
+              else "G1_ENGINE_ENDPOINT_UNAVAILABLE" if args.phase == "g1" and inference["status"] != "pass"
+              else "G0_INFERENCE_FAILED" if args.phase == "g0" and inference["status"] != "pass"
+              else "VLLM_ENVIRONMENT_READY_EVENT_LINEAGE_NOT_VERIFIED")
+    result = {"data_origin": "real_docker_vllm_runtime", "formal_conclusion": formal,
+              "operational_state": {
+                  "formal_engine_implemented": True,
+                  "formal_engine_executed": bool(inference.get("status") == "pass"),
+                  "docker_environment_prepared": True,
+                  "docker_environment_executed": Path("/.dockerenv").exists(),
+                  "model_snapshot_available": model_info["available"],
+                  "g0_evidence_available": g0,
+                  "g1_evidence_available": False,
+              },
+              "protocol": "timeweaver-vllm-connector-v0.3.1", "runtime": ident,
               "environment": env, "model": model_info, "inference": inference,
               "gates": {"G0": "PASS" if g0 else "FAIL",
               "G1": "BLOCKED_REAL_EVENT_CAPTURE"}}

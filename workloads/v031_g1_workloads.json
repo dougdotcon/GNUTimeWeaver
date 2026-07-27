@@ -1,0 +1,13 @@
+{
+  "protocol": "timeweaver-vllm-connector-v0.3.1",
+  "block_size_assumption": 16,
+  "workloads": [
+    {"id": "W0", "prompt": "TimeWeaver qualification prefix with enough tokens to create multiple complete cache blocks. Repeatable deterministic text for event validation.", "temperature": 0, "seed": 7, "max_tokens": 16, "expected": "unique_multi_block_gate"},
+    {"id": "W1", "prompt": "TimeWeaver qualification prefix with enough tokens to create multiple complete cache blocks. Repeatable deterministic text for event validation.", "temperature": 0, "seed": 7, "max_tokens": 16, "expected": "exact_repeat"},
+    {"id": "W2", "prompt": "TimeWeaver qualification prefix with enough tokens to create multiple complete cache blocks. Different suffix.", "temperature": 0, "seed": 7, "max_tokens": 16, "expected": "shared_prefix_different_suffix"},
+    {"id": "W3", "prompt": "TimeWeaver qualification prefix with a partial divergent tail.", "temperature": 0, "seed": 7, "max_tokens": 16, "expected": "partial_block_tail"},
+    {"id": "W4", "prompt": "Long deterministic prefix for replay and gap validation across multiple complete blocks.", "temperature": 0, "seed": 7, "max_tokens": 16, "expected": "multi_block_replay"},
+    {"id": "W5", "prompt": "Cache clear or removal workload.", "temperature": 0, "seed": 7, "max_tokens": 4, "expected": "removal_attempt"},
+    {"id": "W6", "prompt": "Consumer restart and replay workload.", "temperature": 0, "seed": 7, "max_tokens": 16, "expected": "consumer_restart_replay"}
+  ]
+}

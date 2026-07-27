@@ -17,16 +17,25 @@ services:
         VLLM_TAG: v0.23.0
     environment:
       TIMEWEAVER_VLLM_MODE: event_mirror_only
+      TIMEWEAVER_MODEL: /models/acceptance
+      TIMEWEAVER_RESULTS: /results
+      TIMEWEAVER_RUN_ID: docker-campaign
       HF_HUB_OFFLINE: "1"
       TRANSFORMERS_OFFLINE: "1"
-      LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4
+      LD_PRELOAD: /lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4
     volumes:
       - ./models/qwen2.5-coder-0.5b-instruct:/models/acceptance:ro
-    command: ["--engine"]
+      - ./campaign-results:/results
+    command: ["python", "tools/vllm_engine.py"]
     networks: [timeweaver-vllm-campaign]
     shm_size: "4gb"
     security_opt: [no-new-privileges:true]
     cap_drop: ["ALL"]
+    healthcheck:
+      test: ["CMD", "python", "tools/check_vllm_engine_ready.py"]
+      interval: 5s
+      timeout: 5s
+      retries: 120
   campaign-runner:
     build:
       context: .
@@ -38,10 +47,10 @@ services:
     volumes:
       - ./campaign-results:/results
       - ./models/qwen2.5-coder-0.5b-instruct:/models/acceptance:ro
-    command: ["--output", "/results/vllm_g0_g1.json", "--model", "/models/acceptance"]
+    command: ["--output", "/results/vllm_g0_g1.json", "--model", "/models/acceptance", "--phase", "g1"]
     depends_on:
       timeweaver-event-mirror: {condition: service_started}
-      vllm-engine: {condition: service_started}
+      vllm-engine: {condition: service_healthy}
     networks: [timeweaver-vllm-campaign]
     shm_size: "4gb"
     security_opt: [no-new-privileges:true]
