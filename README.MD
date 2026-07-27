@@ -26,6 +26,11 @@ The block-native KV protocol is preregistered in
 no WSL/Linux distribution, PyTorch, or vLLM. No real block restore or VRAM
 claim is made before the pinned vLLM runtime is executed in Linux/WSL2.
 
+The original v0.3 runtime pin was superseded before execution. Amendment v0.3.1
+uses official vLLM tag `v0.23.0` at
+`0fc695fc6d1d82e9a5ac6835ac8e4e1c83703665` and limits scope to Linux/WSL2 G0
+qualification and read-only real KV event lineage G1.
+
 ## Run the MVP
 
 Requirements:

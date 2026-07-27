@@ -1,0 +1,24 @@
+schema_version: "0.3.1"
+protocol_id: "timeweaver-vllm-connector-v0.3.1:6921ad2fb55d44c18e4c52ed83be494031c47720ef2bd8f80182d91221000985"
+supersedes: v0.3
+runtime:
+  name: vllm
+  tag: v0.23.0
+  commit: 0fc695fc6d1d82e9a5ac6835ac8e4e1c83703665
+  tree_status: clean
+environment:
+  required_os: linux
+  allowed: [native_linux, wsl2]
+  python: "3.12"
+  architecture: x86_64
+  backend: cpu
+scope:
+  gates: [G0_ENVIRONMENT_READY, G1_EVENT_LINEAGE_VERIFIED]
+  mode: event_mirror_only
+  payload_persistence: forbidden
+events:
+  publisher: zmq
+  topic: timeweaver-kv-v031
+  delivery: at_least_once
+  gap_policy: replay_or_fail
+hash_algorithm: sha256_cbor

@@ -1,4 +1,7 @@
 schema_version: "0.3"
+status: superseded_before_real_execution
+superseded_reason: invalid_external_runtime_pin
+replacement_protocol: v0.3.1
 protocol_id: "timeweaver-vllm-block-connector-v0.3:5d8e9f3f16e89b1d8042fe5328f531a6080ee51600193b0e678bdc808ad5083d"
 runtime:
   name: vllm

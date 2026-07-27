@@ -168,3 +168,7 @@ como se já tivesse atingido esse critério.
 The next milestone is CPU llama.cpp checkpoint/restore/fork proof. Until a
 pinned runtime and explicit `TIMEWEAVER_MODEL_PATH` are available, the formal
 status is `ADAPTER_PROTOCOL_READY_NO_REAL_MODEL`.
+
+For vLLM, v0.3 was never executed and is superseded due to an invalid runtime
+pin. v0.3.1 corrects the pin to v0.23.0 and remains blocked at G0 until a
+Linux/WSL2 Python 3.12 environment can execute vLLM and emit real KV events.

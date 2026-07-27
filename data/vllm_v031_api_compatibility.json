@@ -1,0 +1,1 @@
+{"runtime":"v0.23.0","connector_base":"KVConnectorBase_V1","methods":["get_num_new_matched_tokens","update_state_after_alloc","build_connector_meta","update_connector_output","request_finished","take_events","register_kv_caches","start_load_kv","wait_for_layer_load","save_kv_layer","wait_for_save","get_finished"],"mode":"event_mirror_only","external_matches":0}
