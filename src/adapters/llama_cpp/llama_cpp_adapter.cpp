@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
 #include "llama_cpp_adapter.h"
 #include <cstring>
 extern "C" int tw_llama_model_load(const char *p, tw_runtime_error *e) {

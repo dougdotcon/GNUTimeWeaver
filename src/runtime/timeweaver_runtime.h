@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
 #ifndef TIMEWEAVER_RUNTIME_H
 #define TIMEWEAVER_RUNTIME_H
 #include <stdbool.h>

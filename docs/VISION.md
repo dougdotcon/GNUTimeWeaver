@@ -25,7 +25,8 @@ O repositório atual já contém um MVP funcional para validar a base técnica d
 - suporte a snapshots de páginas e cópia sob escrita;
 - um fluxo de demo com agente local que falha em uma sintaxe e depois continua em uma branch corrigida;
 - uma interface local de dashboard/CLI para explorar checkpoints e realizar forks;
-- uma licença GPL-3.0-only, alinhada com a filosofia de soberania cognitiva e execução local.
+- uma licença AGPL-3.0-or-later, alinhada com a filosofia de soberania cognitiva
+  e execução local, com opção de licença comercial para o núcleo.
 
 ## O que não é o foco do MVP
 
@@ -44,4 +45,3 @@ O TimeWeaver é voltado a desenvolvedores que constroem agentes autônomos, pipe
 ## Direção estratégica
 
 A direção do projeto é simples: criar uma infraestrutura local, aberta e verificável para depurar agentes de IA como se fossem programas tradicionais, começando pela persistência e evolução do estado e avançando em direção a integrações mais sofisticadas com motores de inferência.
-

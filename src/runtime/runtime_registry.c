@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
 #include "timeweaver_runtime.h"
 #include <string.h>
 const char *tw_runtime_name(void) { return "llama.cpp"; }

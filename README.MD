@@ -26,6 +26,25 @@ The block-native KV protocol is preregistered in
 no WSL/Linux distribution, PyTorch, or vLLM. No real block restore or VRAM
 claim is made before the pinned vLLM runtime is executed in Linux/WSL2.
 
+### Linux/Docker campaign
+
+On a Linux server with Docker, build and audit the pinned CPU environment with:
+
+```bash
+make vllm-image
+make vllm-campaign
+```
+
+The image clones the official `v0.23.0` tag, installs Python 3.12 CPU vLLM,
+and writes `campaign-results/vllm_g0_g1.json`. Before running the formal
+campaign, place the frozen Transformers snapshot at
+`models/qwen2.5-coder-0.5b-instruct/`; it is mounted read-only and offline
+mode prevents silent downloads. The Compose topology separates
+`timeweaver-event-mirror`, `vllm-engine`, and `campaign-runner` on an internal
+network with 4 GiB shared memory. The command exits non-zero until G0 is
+qualified; G1 remains explicitly blocked until a real vLLM request emits KV
+events. No KV payload is persisted, and all containers drop capabilities.
+
 The original v0.3 runtime pin was superseded before execution. Amendment v0.3.1
 uses official vLLM tag `v0.23.0` at
 `0fc695fc6d1d82e9a5ac6835ac8e4e1c83703665` and limits scope to Linux/WSL2 G0
@@ -106,7 +125,9 @@ blocks and parent hashes rather than around a historical kernel implementation.
 
 ## License
 
-GNU TimeWeaver is free software licensed under
-[GNU GPLv3](LICENSE). See [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a
-change. TimeWeaver is not currently an official GNU package and does not claim
+GNU TimeWeaver core is free software licensed under the
+[GNU Affero General Public License v3.0 or later](LICENSE). See
+[CONTRIBUTING.md](CONTRIBUTING.md) before submitting a change. The copyright
+holder may also offer the AGPL-covered components under a separate commercial
+license. TimeWeaver is not currently an official GNU package and does not claim
 endorsement by the GNU Project.

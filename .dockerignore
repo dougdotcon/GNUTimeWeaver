@@ -1,0 +1,10 @@
+.git
+.venv
+build*
+node_modules
+vendor
+campaign-results
+data
+reports
+*.gguf
+*.safetensors

@@ -9,9 +9,9 @@ engineering constraints.
    page references. A snapshot compares each 4 KiB logical page with its parent.
    Equal pages retain the existing physical page ID; changed pages are appended
    and never modified afterward.
-2. **Cognitive sovereignty + GPLv3.** The native store, agent demonstration,
+2. **Cognitive sovereignty + AGPLv3.** The native store, agent demonstration,
    server, and UI run locally. Runtime behavior needs no hosted API or telemetry.
-   The repository is licensed as GPL-3.0-only.
+   The repository is licensed as AGPL-3.0-or-later.
 3. **Memory snapshots + mmap.** `graph.twm` and `pages.twd` are mapped into the
    process address space. GNU/Linux uses POSIX `mmap(..., MAP_SHARED, ...)` and
    `msync`; the Windows development port uses `CreateFileMapping` and

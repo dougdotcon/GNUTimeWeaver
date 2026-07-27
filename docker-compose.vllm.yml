@@ -1,0 +1,51 @@
+name: timeweaver-vllm-campaign
+services:
+  timeweaver-event-mirror:
+    build:
+      context: .
+      dockerfile: docker/vllm-cpu/Dockerfile
+    command: ["--event-mirror"]
+    networks: [timeweaver-vllm-campaign]
+    shm_size: "4gb"
+    security_opt: [no-new-privileges:true]
+    cap_drop: ["ALL"]
+  vllm-engine:
+    build:
+      context: .
+      dockerfile: docker/vllm-cpu/Dockerfile
+      args:
+        VLLM_TAG: v0.23.0
+    environment:
+      TIMEWEAVER_VLLM_MODE: event_mirror_only
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4
+    volumes:
+      - ./models/qwen2.5-coder-0.5b-instruct:/models/acceptance:ro
+    command: ["--engine"]
+    networks: [timeweaver-vllm-campaign]
+    shm_size: "4gb"
+    security_opt: [no-new-privileges:true]
+    cap_drop: ["ALL"]
+  campaign-runner:
+    build:
+      context: .
+      dockerfile: docker/vllm-cpu/Dockerfile
+    environment:
+      TIMEWEAVER_VLLM_MODE: event_mirror_only
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    volumes:
+      - ./campaign-results:/results
+      - ./models/qwen2.5-coder-0.5b-instruct:/models/acceptance:ro
+    command: ["--output", "/results/vllm_g0_g1.json", "--model", "/models/acceptance"]
+    depends_on:
+      timeweaver-event-mirror: {condition: service_started}
+      vllm-engine: {condition: service_started}
+    networks: [timeweaver-vllm-campaign]
+    shm_size: "4gb"
+    security_opt: [no-new-privileges:true]
+    cap_drop: ["ALL"]
+networks:
+  timeweaver-vllm-campaign:
+    internal: true

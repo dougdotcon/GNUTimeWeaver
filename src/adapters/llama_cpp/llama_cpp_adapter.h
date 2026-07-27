@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
 #ifndef TW_LLAMA_CPP_ADAPTER_H
 #define TW_LLAMA_CPP_ADAPTER_H
 #include "../../runtime/timeweaver_runtime.h"

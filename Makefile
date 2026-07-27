@@ -4,7 +4,7 @@ CPPFLAGS := -Iinclude -Isrc/native
 BUILD := build
 CORE := src/native/platform.c src/native/store.c
 
-.PHONY: all test clean
+.PHONY: all test clean vllm-image vllm-campaign
 
 all: $(BUILD)/timeweaver
 
@@ -22,3 +22,10 @@ test: $(BUILD)/timeweaver_tests
 
 clean:
 	rm -rf $(BUILD)
+
+vllm-image:
+	docker compose -f docker-compose.vllm.yml build
+
+vllm-campaign:
+	mkdir -p campaign-results
+	docker compose -f docker-compose.vllm.yml run --rm campaign-runner

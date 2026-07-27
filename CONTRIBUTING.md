@@ -10,4 +10,6 @@ the native memory model easier to verify.
 4. Keep network services opt-in. Do not add telemetry or required hosted APIs.
 5. Document format changes and bump the on-disk version.
 
-By contributing, you agree that your contribution is licensed under GPL-3.0-only.
+By contributing, you agree that your contribution is licensed under
+AGPL-3.0-or-later. Contributions requiring commercial dual licensing are
+accepted under a separate Contributor License Agreement.
