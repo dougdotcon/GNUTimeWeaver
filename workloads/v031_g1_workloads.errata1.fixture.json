@@ -1,0 +1,17 @@
+{
+  "format": "timeweaver-v031-g1-workload-errata1-fixture",
+  "errata_id": "v031-g1-w0-errata1",
+  "protocol_id": "6921ad2fb55d44c18e4c52ed83be494031c47720ef2bd8f80182d91221000985",
+  "original_workload_sha256": "ba5d8d4952eb5ce55241392f28c637cd515d78396a09782248eccd4857c914c8",
+  "workload_id": "W0-E1",
+  "source_artifact": "campaign-results/v031/20260727T202251Z/g0-apc-supplement/g0_apc_workload.json",
+  "source_artifact_sha256": "f90c640ca717e92999a79cbcae89133d6bcac6800b29ccdf2c7d3018887598da",
+  "source_field": "prompt_r0",
+  "selection_algorithm": "first natural sentence candidate in [8*block_size,12*block_size-1]",
+  "selection_unit_count": 14,
+  "prompt": "TimeWeaver APC qualification shared prefix. This deterministic sentence is repeated to create complete KV blocks. TimeWeaver APC qualification shared prefix. This deterministic sentence is repeated to create complete KV blocks. TimeWeaver APC qualification shared prefix. This deterministic sentence is repeated to create complete KV blocks. TimeWeaver APC qualification shared prefix. This deterministic sentence is repeated to create complete KV blocks. TimeWeaver APC qualification shared prefix. This deterministic sentence is repeated to create complete KV blocks. TimeWeaver APC qualification shared prefix. This deterministic sentence is repeated to create complete KV blocks. TimeWeaver APC qualification shared prefix. This deterministic sentence is repeated to create complete KV blocks.",
+  "prompt_sha256": "b13e8ba681400d0bd7dce6e1b13c67ae9fc085d7929e32f1d597f501e67bfd9c",
+  "sampling": {"temperature": 0, "seed": 117038, "max_tokens": 4, "stream": false},
+  "expected": {"block_size": 16, "prompt_tokens": 133, "complete_blocks": 8, "tail_tokens": 5},
+  "created_at_utc": "2026-07-27T21:23:00Z"
+}

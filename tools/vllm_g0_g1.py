@@ -14,8 +14,9 @@ def http_json(url: str, payload: dict | None = None) -> dict:
     body = None if payload is None else json.dumps(payload).encode()
     request = urllib.request.Request(url, data=body,
         headers={"Content-Type": "application/json"} if body else {})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read())
+    with urllib.request.urlopen(request, timeout=int(os.getenv("TIMEWEAVER_HTTP_TIMEOUT", "180"))) as response:
+        data = response.read()
+        return json.loads(data) if data else {"http_status": response.status}
 
 def git_identity(repo: Path) -> dict:
     remote = run("git", "ls-remote", "--tags", "origin",
@@ -77,12 +78,15 @@ def main() -> int:
         model_info["files"] = files
     else:
         model_info["status"] = "G0_MODEL_NOT_AVAILABLE"
-    try:
-        import vllm
-        vllm_info = {"available": True, "version": getattr(vllm, "__version__", None),
-                     "path": str(Path(vllm.__file__).resolve())}
-    except Exception as exc:
-        vllm_info = {"available": False, "error": str(exc)}
+    if args.phase == "g1":
+        vllm_info = {"available": "not_imported_by_http_runner", "version": None, "path": None}
+    else:
+        try:
+            import vllm
+            vllm_info = {"available": True, "version": getattr(vllm, "__version__", None),
+                         "path": str(Path(vllm.__file__).resolve())}
+        except Exception as exc:
+            vllm_info = {"available": False, "error": str(exc)}
     try:
         import timeweaver_vllm
         connector_info = {"available": True, "path": str(Path(timeweaver_vllm.__file__).resolve())}
@@ -103,15 +107,19 @@ def main() -> int:
         try:
             health = http_json(endpoint + "/health")
             models = http_json(endpoint + "/v1/models")
-            tokenized = http_json(endpoint + "/tokenize",
-                                  {"prompt": "TimeWeaver qualification prompt."})
+            workload_path = Path(os.getenv("TIMEWEAVER_G1_WORKLOAD", "workloads/v031_g1_workloads.json"))
+            loaded = json.loads(workload_path.read_text())
+            workload = loaded if loaded.get("workload_id") == "W0-E1" else next(w for w in loaded["workloads"] if w["id"] == "W0")
+            prompt = workload["prompt"]
+            tokenized = http_json(endpoint + "/tokenize", {"prompt": prompt})
+            sampling = workload.get("sampling", workload)
             completion = http_json(endpoint + "/v1/completions", {
                 "model": "timeweaver-qwen",
-                "prompt": "Write one short sentence about time travel.",
-                "temperature": 0, "max_tokens": 16,
+                "prompt": prompt,
+                "temperature": sampling["temperature"], "max_tokens": sampling["max_tokens"], "seed": sampling["seed"],
             })
             inference = {"status": "pass", "endpoint": endpoint,
-                         "health": health, "models": models,
+                         "workload": workload, "prompt": prompt, "health": health, "models": models,
                          "tokenized": tokenized, "completion": completion}
         except Exception as exc:
             inference = {"status": "fail", "reason": "G1_ENGINE_ENDPOINT_UNAVAILABLE",

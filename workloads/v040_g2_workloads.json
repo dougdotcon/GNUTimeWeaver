@@ -1,0 +1,10 @@
+{
+  "protocol": "timeweaver-vllm-connector-v0.4.0",
+  "workload_id": "W0-E1",
+  "tokens": 924,
+  "block_size": 128,
+  "complete_blocks": 7,
+  "tail_tokens": 28,
+  "execution_authorized": false,
+  "scope": {"model":"Qwen/Qwen2.5-Coder-0.5B-Instruct","requests":1,"cpu":true,"tensor_parallel":1,"pipeline_parallel":1,"multimodal":false,"lora":false,"sliding_window":false,"speculative_decoding":false}
+}

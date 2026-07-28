@@ -14,6 +14,7 @@ REQUIRED = ("--host", "--port", "--served-model-name",
 def main() -> int:
     model = os.getenv("TIMEWEAVER_MODEL", "/models/acceptance")
     run_id = os.getenv("TIMEWEAVER_RUN_ID", "unidentified")
+    engine_id = os.getenv("TIMEWEAVER_ENGINE_ID", f"timeweaver-v031-{run_id}")
     results = Path(os.getenv("TIMEWEAVER_RESULTS", "/results"))
     results.mkdir(parents=True, exist_ok=True)
     preflight = subprocess.run(["python", "tools/connector_preflight.py"],
@@ -34,7 +35,7 @@ def main() -> int:
         return 20
     connector = {
         "kv_connector": "TimeWeaverKVConnector", "kv_role": "kv_both",
-        "engine_id": f"timeweaver-v031-{run_id}",
+        "engine_id": engine_id,
         "kv_connector_module_path": "timeweaver_vllm.connector",
         "kv_load_failure_policy": "fail",
         "kv_connector_extra_config": {
@@ -57,6 +58,8 @@ def main() -> int:
                "--disable-hybrid-kv-cache-manager",
                "--kv-transfer-config", json.dumps(connector),
                "--kv-events-config", json.dumps(events)]
+    if os.getenv("TIMEWEAVER_ENABLE_PROMPT_TOKENS_DETAILS", "0") == "1":
+        command.append("--enable-prompt-tokens-details")
     print(json.dumps({"engine_id": connector["engine_id"], "command": command}), flush=True)
     os.execvpe(command[0], command, os.environ.copy())
     return 1

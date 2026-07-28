@@ -1,0 +1,30 @@
+{
+  "format": "timeweaver-v031-g1-workload-errata",
+  "errata_id": "v031-g1-w0-errata1",
+  "protocol_id": "6921ad2fb55d44c18e4c52ed83be494031c47720ef2bd8f80182d91221000985",
+  "original_workload_sha256": "ba5d8d4952eb5ce55241392f28c637cd515d78396a09782248eccd4857c914c8",
+  "superseded_workload_id": "W0",
+  "replacement_workload_id": "W0-E1",
+  "selection_algorithm": "first natural-text candidate from APC R0 source tokenized by formal engine in [8*block_size,12*block_size-1], fallback to smallest >=8*block_size",
+  "source_artifact": "campaign-results/v031/20260727T202251Z/g0-apc-supplement/g0_apc_workload.json",
+  "source_artifact_sha256": "f90c640ca717e92999a79cbcae89133d6bcac6800b29ccdf2c7d3018887598da",
+  "source_field": "prompt_r0",
+  "sampling": {"temperature": 0, "seed": 117038, "max_tokens": 4, "stream": false},
+  "creation_timestamp_utc": "2026-07-27T21:22:55Z",
+  "acceptance_criteria_unchanged": true,
+  "runtime_configuration_unchanged": true,
+  "protocol_unchanged": true,
+  "previous_attempt": {
+    "result_path": "campaign-results/v031/20260727T210757Z/g1-a-w0/g1a-result.json",
+    "result_sha256": "982c48d3546166ba470be839a3fb8eea61919ebb94b71425d5f076ee2c088ce9",
+    "original_prompt_sha256": "15fe6e528283707cd7df127a18849612a9bff177351bcc9e0050bd57148b8c40",
+    "original_token_count": 23,
+    "block_size": 16,
+    "complete_blocks": 1,
+    "required_complete_blocks": 3,
+    "publisher_test_reached": false,
+    "event_transport_test_reached": false,
+    "BlockStored_expectation_valid": false,
+    "reason": "frozen W0 did not satisfy the existing minimum complete-block precondition"
+  }
+}

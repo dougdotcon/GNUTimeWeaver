@@ -1,69 +1,241 @@
+<div align="center">
+
 # GNU TimeWeaver
 
-Local-first time-travel debugger for agent memory. TimeWeaver stores agent
-checkpoints as a directed acyclic graph (DAG), shares unchanged 4 KiB pages
-between descendants, and resumes a mutated branch without executing its prefix
-again.
+### Fork the memory. Rewind the agent. Inspect every branch.
 
-This repository contains an operational CPU/mmap MVP. It proves the storage,
-fork, checkout, persistence, and debugger workflow before coupling the same ABI
-to a real inference engine's KV cache.
+**A local-first time-travel debugger and versioned state runtime for LLM agents.**
 
-## Real model bridge v0.2
+> What if an agent could remember every version of its memory —
+> and we could inspect, replay, restore and fork it?
 
-The CPU bridge scaffolding targets a pinned, externally supplied `llama.cpp`
-tree and stores `opaque_runtime_state`; it is currently
-`ADAPTER_PROTOCOL_READY_NO_REAL_MODEL` until `TIMEWEAVER_MODEL_PATH` points to a
-local GGUF and the runtime commit is recorded. vLLM block-native KV and CUDA/
-VRAM work remain future phases.
+<br>
 
-## vLLM connector v0.3
+[![License](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue?style=for-the-badge)](LICENSE)
+![Status](https://img.shields.io/badge/status-research%20preview-7c3aed?style=for-the-badge)
+![Local First](https://img.shields.io/badge/local--first-yes-0ea5e9?style=for-the-badge)
+![vLLM](https://img.shields.io/badge/vLLM-0.23.0-f97316?style=for-the-badge)
+![llama.cpp](https://img.shields.io/badge/llama.cpp-verified-22c55e?style=for-the-badge)
 
-The block-native KV protocol is preregistered in
-`config/vllm_block_connector_v0_3.yaml`, with an external Python package under
-`python/timeweaver_vllm`. It currently reports
-`VLLM_CONNECTOR_PROTOCOL_READY_NO_SUPPORTED_ENVIRONMENT`: this Windows host has
-no WSL/Linux distribution, PyTorch, or vLLM. No real block restore or VRAM
-claim is made before the pinned vLLM runtime is executed in Linux/WSL2.
+[Quickstart](#quickstart) ·
+[What works today](#what-works-today) ·
+[Architecture](#architecture) ·
+[Research status](#research-status) ·
+[Roadmap](#roadmap) ·
+[Contributing](#contributing)
 
-### Linux/Docker campaign
+</div>
 
-On a Linux server with Docker, build and audit the pinned CPU environment with:
+---
 
-```bash
-make vllm-image
-make vllm-campaign
+## Git for LLM runtime memory
+
+Modern agents can run for hours, call dozens of tools and accumulate large inference states.
+
+Then something goes wrong.
+
+A bad tool call.
+A hallucinated assumption.
+A broken SQL query.
+A branch worth exploring differently.
+
+Today, the usual answer is:
+
+```text
+Start over and recompute everything.
 ```
 
-The image clones the official `v0.23.0` tag, installs Python 3.12 CPU vLLM,
-and writes `campaign-results/vllm_g0_g1.json`. Before running the formal
-campaign, place the frozen Transformers snapshot at
-`models/qwen2.5-coder-0.5b-instruct/`; it is mounted read-only and offline
-mode prevents silent downloads. The Compose topology separates
-`timeweaver-event-mirror`, `vllm-engine`, and `campaign-runner` on an internal
-network with 4 GiB shared memory. The command exits non-zero until G0 is
-qualified; G1 remains explicitly blocked until a real vLLM request emits KV
-events. No KV payload is persisted, and all containers drop capabilities.
+TimeWeaver explores a different answer:
 
-The runner has an explicit phase boundary: `--phase g0` may instantiate a
-temporary `vllm.LLM` for independent qualification; formal `--phase g1` never
-instantiates another runtime and requires requests to be sent to the single
-`vllm-engine` process observed by the event mirror. Until that request path is
-available, the result is reported as `G1_REQUIRES_SINGLE_FORMAL_ENGINE`, never
-as real KV evidence.
+```text
+Checkpoint it.
+Inspect it.
+Rewind it.
+Fork it.
+Continue from there.
+```
 
-The original v0.3 runtime pin was superseded before execution. Amendment v0.3.1
-uses official vLLM tag `v0.23.0` at
-`0fc695fc6d1d82e9a5ac6835ac8e4e1c83703665` and limits scope to Linux/WSL2 G0
-qualification and read-only real KV event lineage G1.
+GNU TimeWeaver versions agent and inference state as a directed acyclic graph, shares unchanged memory between descendants and provides the foundations for resuming an earlier state without recomputing its entire prefix.
 
-## Run the MVP
+Think of it as:
 
-Requirements:
+```text
+git commit     → checkpoint agent state
+git log        → inspect memory lineage
+git checkout   → return to an earlier state
+git branch     → explore another continuation
+git diff       → understand what changed
+```
 
-- Node.js 22 or newer
-- GCC or another C11 compiler available as `gcc`/`cc`
-- GNU/Linux, macOS, or Windows (the production target is GNU/Linux)
+---
+
+## Why this matters
+
+Long-running agents are difficult to debug because their behavior depends on everything that happened before the failure.
+
+TimeWeaver is designed to make that history visible and actionable.
+
+Potential applications include:
+
+* debugging long-running agents;
+* branching an agent before a critical decision;
+* comparing multiple continuations from the same prefix;
+* recovering workflows after failures;
+* auditing how an agent reached a state;
+* reproducible LLM experiments;
+* persistent inference sessions;
+* shared and deduplicated KV-cache infrastructure;
+* reducing repeated prefix computation.
+
+Some of these capabilities are operational today. Others depend on the KV payload save and restore milestones described below.
+
+---
+
+## What works today
+
+### Local temporal-state runtime
+
+The native CPU/mmap MVP provides:
+
+* persistent checkpoint DAGs;
+* immutable 4 KiB physical pages;
+* Copy-on-Write descendants;
+* zero-copy views over immutable mapped pages;
+* checkpoint, fork and checkout operations;
+* state hashing and structural validation;
+* local CLI and browser debugger;
+* measurable storage deduplication;
+* crash-surviving file-backed state.
+
+The bundled demonstration creates:
+
+```text
+9 checkpoints
+144 logical page references
+35 physical pages
+~75.7% fewer snapshot bytes than full copies
+```
+
+### Real llama.cpp bridge
+
+The real-model bridge has been executed against a pinned llama.cpp runtime and a local GGUF model.
+
+Formal status:
+
+```text
+REAL_MODEL_BRIDGE_VERIFIED_WITH_LIMITATIONS
+```
+
+Verified properties include:
+
+* real model execution;
+* opaque runtime-state capture;
+* exact restore at multiple prefix sizes;
+* isolated continuation branches;
+* zero prefix retokenization after restore;
+* zero prefix re-decoding after restore;
+* persistent object-store fault handling.
+
+This validation is currently CPU-oriented and does not claim GPU or VRAM remapping.
+
+### Real vLLM event lineage
+
+TimeWeaver has also been connected to a pinned vLLM v0.23.0 engine.
+
+Formal status:
+
+```text
+VLLM_EVENT_LINEAGE_VERIFIED_WITH_LIMITATIONS
+```
+
+Verified properties include:
+
+* real `BlockStored` events;
+* logical parent/child block lineage;
+* branching after shared prefixes;
+* real-frame deduplication;
+* event sequence tracking;
+* controlled sequence-gap detection;
+* replay through the real vLLM replay endpoint;
+* mirror restart and durable checkpoint recovery;
+* byte-identical PUB and REPLAY payloads;
+* independent offline lineage reconstruction.
+
+Current vLLM scope remains:
+
+```text
+CPU-only
+event_mirror_only
+no KV payload persistence
+no KV payload restore
+no external prefix matching
+BlockRemoved not exercised
+AllBlocksCleared not exercised
+```
+
+---
+
+## See the idea
+
+```mermaid
+flowchart LR
+    U["Agent / Application"] --> E["Inference Engine"]
+
+    E --> L["llama.cpp adapter"]
+    E --> V["vLLM connector"]
+
+    L --> C["TimeWeaver Native Core"]
+    V --> M["KV Event Mirror"]
+
+    C --> P["Immutable Page Store"]
+    C --> D["Checkpoint DAG"]
+    M --> D
+
+    D --> UI["CLI + Time-Travel Debugger"]
+
+    P -. "G2/G3: KV save and restore" .-> E
+```
+
+The current implementation already versions native temporal state and reconstructs real vLLM block lineage.
+
+The next protocols connect that lineage to the physical KV tensors.
+
+---
+
+## Branching an agent
+
+```mermaid
+gitGraph
+    commit id: "Prompt prefix"
+    commit id: "Tool call"
+    commit id: "Checkpoint C2"
+
+    branch safer-branch
+    checkout safer-branch
+    commit id: "Use PostgreSQL"
+    commit id: "Successful result"
+
+    checkout main
+    commit id: "Original continuation"
+    commit id: "SQL failure"
+```
+
+Instead of erasing the failed execution, TimeWeaver keeps both histories.
+
+The failure remains inspectable, while a corrected branch continues from the shared checkpoint.
+
+---
+
+## Quickstart
+
+### Requirements
+
+* Node.js 22 or newer;
+* GCC or another C11 compiler available as `gcc` or `cc`;
+* GNU/Linux, macOS or Windows;
+* GNU/Linux is the primary production target.
+
+Clone the repository and run:
 
 ```bash
 npm run build
@@ -71,70 +243,365 @@ npm test
 npm start
 ```
 
-Open `http://127.0.0.1:7331`. Select any checkpoint, change its working prompt,
-and press **Fork & resume**. The included local agent deliberately produces
-MySQL syntax for a PostgreSQL schema, fails, then demonstrates a corrected
-branch while retaining the earlier mapped pages.
+Open:
 
-No package installation, cloud API, account, model download, or network access
-is required at runtime.
+```text
+http://127.0.0.1:7331
+```
+
+Select a checkpoint, edit its working prompt and press:
+
+```text
+Fork & resume
+```
+
+The included local demonstration intentionally creates an incorrect MySQL-style query for a PostgreSQL schema and then branches into a corrected continuation.
+
+No cloud API, account, model download or network access is required for the local MVP.
+
+---
 
 ## Native CLI
+
+Create and inspect a temporal-state repository:
 
 ```bash
 ./build/timeweaver demo .timeweaver/manual
 ./build/timeweaver export .timeweaver/manual
-./build/timeweaver branch .timeweaver/manual 5 "Use PostgreSQL syntax only"
 ./build/timeweaver validate .timeweaver/manual
 ```
 
-On Windows, use `build\timeweaver.exe`.
+Create a new branch from checkpoint `5`:
 
-## What the MVP proves
+```bash
+./build/timeweaver branch \
+  .timeweaver/manual \
+  5 \
+  "Use PostgreSQL syntax only"
+```
 
-- `mmap`/file mapping persistence with immutable 4 KiB physical pages
-- Copy-on-Write snapshots: a child allocates only pages different from its parent
-- Zero-copy read views over individual immutable mapped pages
-- Persistent DAG lineage, state hashes, HEAD checkout, and structural validation
-- Mutation and continuation from a checkpoint with semantic dependency invalidation
-- Local dashboard and CLI operating through the native C engine
-- Measurable memory accounting against naive full-state snapshots
+On Windows:
 
-The bundled demonstration creates 9 checkpoints with 144 logical page
-references. It uses 35 physical pages instead of 144 full copies, avoiding
-approximately 75.7% of the snapshot bytes.
+```powershell
+build\timeweaver.exe demo .timeweaver\manual
+```
 
-## What it does not claim
+---
 
-This MVP does **not** yet snapshot CUDA allocations, rewrite GPU page tables,
-inspect model weights, or integrate directly with vLLM/llama.cpp. POSIX `mmap`
-maps CPU virtual memory and files; it is not, by itself, a VRAM remapping API.
-The bundled agent still reconstructs a contiguous CPU buffer when it resumes;
-the page-view ABI is available for adapters that can consume discontiguous blocks.
-The demo agent uses KV-shaped local memory blocks so the storage invariants can
-be validated on ordinary hardware. The next milestone is a vLLM KV Connector
-adapter using the existing block/event interfaces, followed by GPU-aware
-benchmarks.
+## Architecture
 
-See [architecture](docs/ARCHITECTURE.md), [MVP scope](docs/MVP.md), and the
-[original product vision](docs/VISION.md).
+TimeWeaver separates the model-independent versioning runtime from inference-engine-specific adapters.
 
-## Design sources
+```mermaid
+flowchart TB
+    subgraph Engines["Inference engines"]
+        LL["llama.cpp"]
+        VL["vLLM"]
+        FUT["Future engines"]
+    end
 
-The vLLM design currently organizes prefix caches as fixed token blocks with
-hashes and reference counts, while KV cache events expose storage/removal events
-to external consumers. TimeWeaver deliberately models its native ABI around
-blocks and parent hashes rather than around a historical kernel implementation.
+    subgraph Adapters["Runtime adapters"]
+        LLA["llama.cpp state adapter"]
+        VLA["vLLM KV connector"]
+        FA["Adapter ABI"]
+    end
 
-- [vLLM prefix caching design](https://docs.vllm.ai/en/stable/design/prefix_caching/)
-- [vLLM KV events configuration](https://docs.vllm.ai/en/latest/api/vllm/config/kv_events/)
-- [vLLM KV events example](https://docs.vllm.ai/en/stable/examples/features/kv_events/)
+    subgraph Core["TimeWeaver core"]
+        DAG["Versioned state DAG"]
+        COW["Copy-on-Write page/block model"]
+        OBJ["Immutable object store"]
+        AUDIT["Hashes, validation and audit"]
+    end
+
+    subgraph Tools["Developer tools"]
+        CLI["Native CLI"]
+        WEB["Local debugger"]
+        API["Integration API"]
+    end
+
+    LL --> LLA
+    VL --> VLA
+    FUT --> FA
+
+    LLA --> DAG
+    VLA --> DAG
+    FA --> DAG
+
+    DAG --> COW
+    COW --> OBJ
+    DAG --> AUDIT
+
+    DAG --> CLI
+    DAG --> WEB
+    DAG --> API
+```
+
+The core does not depend on a specific model architecture.
+
+Engine-specific knowledge — tensor layout, block IDs, KV slices and restore semantics — remains inside the adapter boundary.
+
+---
+
+## Research status
+
+| Capability                                | Status                      |
+| ----------------------------------------- | --------------------------- |
+| Native temporal DAG                       | ✅ Verified                  |
+| Immutable mmap page store                 | ✅ Verified                  |
+| Copy-on-Write snapshots                   | ✅ Verified                  |
+| Native checkpoint/fork/checkout           | ✅ Verified                  |
+| Browser debugger and CLI                  | ✅ Operational               |
+| Real llama.cpp bridge                     | ✅ Verified with limitations |
+| Exact llama.cpp prefix restore            | ✅ Verified                  |
+| Real vLLM KV events                       | ✅ Verified                  |
+| vLLM branching lineage                    | ✅ Verified                  |
+| vLLM sequence-gap replay                  | ✅ Verified                  |
+| Byte-identical PUB/replay payloads        | ✅ Verified                  |
+| Durable event-mirror restart              | ✅ Verified                  |
+| Physical vLLM KV layout mapping           | 🧪 In progress              |
+| Real KV payload persistence               | ⏳ Next milestone            |
+| Real KV payload restore                   | 🗺️ Planned                 |
+| Prefix continuation without recomputation | 🗺️ Planned                 |
+| Native KV block fork/CoW                  | 🗺️ Planned                 |
+| GPU and VRAM validation                   | 🗺️ Planned                 |
+
+Current vLLM protocol work:
+
+```text
+v0.3.1 — event lineage and replay: PASS
+v0.4.0 — physical layout and KV payload-save preparation: IN PROGRESS
+```
+
+---
+
+## The final objective
+
+The target workflow is:
+
+```mermaid
+sequenceDiagram
+    participant A as Agent
+    participant V as Inference engine
+    participant T as TimeWeaver
+    participant S as Versioned KV store
+
+    A->>V: Execute long prefix
+    V->>T: Publish block lineage
+    T->>S: Save immutable KV blocks
+    T->>T: Create checkpoint
+
+    Note over A,T: Later, or after a failure
+
+    A->>T: Checkout checkpoint
+    T->>S: Resolve saved KV state
+    S-->>V: Restore KV blocks
+    T-->>A: Continue from checkpoint
+
+    Note over V: Prefix is not recomputed
+```
+
+The final goal is not merely to serialize a cache.
+
+It is to make inference state:
+
+```text
+versionable
+inspectable
+recoverable
+branchable
+auditable
+shareable
+```
+
+---
+
+## Roadmap
+
+### G2 — Save real KV payloads
+
+* prove logical block hash → physical block ID mapping;
+* identify the exact tensor slice for every layer;
+* persist immutable per-layer KV objects;
+* create complete block manifests;
+* validate checksums and transactional writes.
+
+Target conclusion:
+
+```text
+VLLM_KV_PAYLOAD_SAVE_VERIFIED_NO_RESTORE
+```
+
+### G3 — Restore and continue
+
+* load compatible KV objects;
+* restore them into vLLM's paged KV cache;
+* announce externally available prefix tokens;
+* continue generation from the restored state;
+* prove that the restored prefix was not reprocessed.
+
+### G4 — Native branching and Copy-on-Write
+
+* restore one checkpoint;
+* create multiple continuation branches;
+* share immutable prefix blocks;
+* isolate divergent suffixes;
+* prove branch independence.
+
+### Production work
+
+* GPU and VRAM validation;
+* concurrent requests;
+* distributed storage;
+* eviction and lifecycle events;
+* compatibility policies;
+* observability and operational tooling.
+
+---
+
+## Proof, not hype
+
+TimeWeaver follows a strict rule:
+
+> A capability is not considered implemented until it is exercised against a real runtime and produces independently auditable evidence.
+
+The project distinguishes:
+
+* implemented behavior;
+* protocol preparation;
+* observed runtime behavior;
+* experimentally verified behavior;
+* planned capabilities.
+
+TimeWeaver does **not** currently claim:
+
+* CUDA page-table manipulation;
+* VRAM snapshotting;
+* zero-copy GPU restore;
+* real vLLM KV payload restore;
+* external prefix matches;
+* vLLM prefill avoidance;
+* production-scale distributed operation.
+
+The roadmap describes research targets, not completed capabilities.
+
+---
+
+## Reproduce the vLLM campaign
+
+A pinned Linux/Docker environment is provided for the formal vLLM campaigns.
+
+Prepare the frozen model snapshot at:
+
+```text
+models/qwen2.5-coder-0.5b-instruct/
+```
+
+Then run:
+
+```bash
+make vllm-image
+make vllm-campaign
+```
+
+The topology separates:
+
+```text
+timeweaver-event-mirror
+vllm-engine
+campaign-runner
+```
+
+The model is mounted read-only and offline execution prevents silent model downloads.
+
+Campaigns are versioned and preregistered. Raw results, hashes, protocol identifiers and limitations are preserved as evidence instead of being overwritten by later runs.
+
+---
+
+## Project philosophy
+
+TimeWeaver is built around four ideas:
+
+### Local first
+
+A developer should be able to inspect and control agent state without sending it to an external service.
+
+### Immutable history
+
+Past checkpoints are not silently mutated. New behavior creates descendants.
+
+### Engine-independent core
+
+The versioning model remains separate from the details of llama.cpp, vLLM or future runtimes.
+
+### Honest verification
+
+Failures, limitations and inconclusive runs are preserved instead of being rewritten as successes.
+
+---
+
+## Documentation
+
+* [Architecture](docs/ARCHITECTURE.md)
+* [MVP scope](docs/MVP.md)
+* [Product vision](docs/VISION.md)
+* [Contributing](CONTRIBUTING.md)
+* [License](LICENSE)
+* [Protocols](docs/protocols/)
+
+---
+
+## Who is this for?
+
+TimeWeaver may be useful to:
+
+* AI infrastructure engineers;
+* inference-engine developers;
+* agent-framework maintainers;
+* LLM observability teams;
+* systems researchers;
+* local-first AI developers;
+* engineers working on persistent or long-running agents.
+
+---
+
+## Contributing
+
+TimeWeaver is an experimental systems project with strict evidence requirements.
+
+Contributions are especially welcome in:
+
+* vLLM connector engineering;
+* llama.cpp runtime integration;
+* KV-cache serialization;
+* agent debugging interfaces;
+* GPU memory systems;
+* distributed object storage;
+* reproducible benchmarking;
+* documentation and developer experience.
+
+Before opening a pull request, read [CONTRIBUTING.md](CONTRIBUTING.md).
+
+For implementation problems, open an issue.
+
+For design questions, experiments and broader ideas, use GitHub Discussions.
+
+---
 
 ## License
 
-GNU TimeWeaver core is free software licensed under the
-[GNU Affero General Public License v3.0 or later](LICENSE). See
-[CONTRIBUTING.md](CONTRIBUTING.md) before submitting a change. The copyright
-holder may also offer the AGPL-covered components under a separate commercial
-license. TimeWeaver is not currently an official GNU package and does not claim
-endorsement by the GNU Project.
+GNU TimeWeaver is free software licensed under the
+[GNU Affero General Public License v3.0 or later](LICENSE).
+
+The copyright holder may also offer AGPL-covered components under a separate commercial license.
+
+TimeWeaver is not currently an official GNU package and does not claim endorsement by the GNU Project.
+
+---
+
+<div align="center">
+
+### Agents should not have to forget everything just to try something different.
+
+**Checkpoint. Rewind. Fork. Continue.**
+
+</div>

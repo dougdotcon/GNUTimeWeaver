@@ -1,0 +1,9 @@
+{
+  "status":"G2_BLOCK_SLICE_LAYOUT_UNRESOLVED",
+  "execution":"preparation_only",
+  "payload_persistence_executed":false,
+  "runtime":"vLLM 0.23.0 / CPU",
+  "prefer_cross_layer_blocks":false,
+  "required_next_observation":"register_kv_caches and save_kv_layer on real G2-L0 inference",
+  "prohibition":"no slicing or object publication until physical block dimension and logical/physical mapping are PROVEN"
+}

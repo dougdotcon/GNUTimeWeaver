@@ -4,7 +4,17 @@ services:
     build:
       context: .
       dockerfile: docker/vllm-cpu/Dockerfile
-    command: ["--event-mirror"]
+    environment:
+      TIMEWEAVER_RUN_ID: ${TIMEWEAVER_RUN_ID:-g1-a-w0}
+      TIMEWEAVER_ENGINE_ID: ${TIMEWEAVER_ENGINE_ID:-timeweaver-v031-g1-a-w0}
+      TIMEWEAVER_ENABLE_PROMPT_TOKENS_DETAILS: ${TIMEWEAVER_ENABLE_PROMPT_TOKENS_DETAILS:-0}
+      TIMEWEAVER_RESULTS: /results
+      TIMEWEAVER_G1A_TIMEOUT: "600"
+    volumes:
+      - ./campaign-results:/results
+      - ./tools:/workspace/GNUTimeWeaver/tools:ro
+    entrypoint: ["python"]
+    command: ["tools/g1a_event_mirror.py"]
     networks: [timeweaver-vllm-campaign]
     shm_size: "4gb"
     security_opt: [no-new-privileges:true]
@@ -20,13 +30,16 @@ services:
       TIMEWEAVER_MODEL: /models/acceptance
       TIMEWEAVER_RESULTS: /results
       TIMEWEAVER_RUN_ID: docker-campaign
+      TIMEWEAVER_ENGINE_ID: ${TIMEWEAVER_ENGINE_ID:-timeweaver-v031-g1-a-w0}
       HF_HUB_OFFLINE: "1"
       TRANSFORMERS_OFFLINE: "1"
-      LD_PRELOAD: /lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4
+      LD_PRELOAD: /lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4:/opt/timeweaver-venv/lib/libiomp5.so
     volumes:
       - ./models/qwen2.5-coder-0.5b-instruct:/models/acceptance:ro
       - ./campaign-results:/results
-    command: ["python", "tools/vllm_engine.py"]
+      - ./tools:/workspace/GNUTimeWeaver/tools:ro
+    entrypoint: ["python"]
+    command: ["tools/vllm_engine.py"]
     networks: [timeweaver-vllm-campaign]
     shm_size: "4gb"
     security_opt: [no-new-privileges:true]
@@ -44,9 +57,12 @@ services:
       TIMEWEAVER_VLLM_MODE: event_mirror_only
       HF_HUB_OFFLINE: "1"
       TRANSFORMERS_OFFLINE: "1"
+      LD_PRELOAD: /lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4:/opt/timeweaver-venv/lib/libiomp5.so
     volumes:
       - ./campaign-results:/results
       - ./models/qwen2.5-coder-0.5b-instruct:/models/acceptance:ro
+      - ./tools:/workspace/GNUTimeWeaver/tools:ro
+      - ./workloads:/workspace/GNUTimeWeaver/workloads:ro
     command: ["--output", "/results/vllm_g0_g1.json", "--model", "/models/acceptance", "--phase", "g1"]
     depends_on:
       timeweaver-event-mirror: {condition: service_started}
