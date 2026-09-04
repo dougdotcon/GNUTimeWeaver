@@ -1,0 +1,24 @@
+services:
+  timeweaver-event-mirror:
+    environment:
+      TIMEWEAVER_RUN_ID: ${TIMEWEAVER_RUN_ID}
+      TIMEWEAVER_ENGINE_ID: ${TIMEWEAVER_ENGINE_ID}
+      TIMEWEAVER_RESULTS: /results/v040/${TIMEWEAVER_RUN_ID}/g2-a
+      TIMEWEAVER_G1A_TIMEOUT: "420"
+    entrypoint: ["python"]
+    command: ["tools/g1a_event_mirror.py"]
+  vllm-engine:
+    environment:
+      TIMEWEAVER_RUN_ID: ${TIMEWEAVER_RUN_ID}
+      TIMEWEAVER_ENGINE_ID: ${TIMEWEAVER_ENGINE_ID}
+      TIMEWEAVER_RESULTS: /results/v040/${TIMEWEAVER_RUN_ID}/g2-a
+      TIMEWEAVER_VLLM_MODE: kv_payload_save_only
+      TIMEWEAVER_EXECUTION_PROTOCOL_ID: timeweaver-vllm-connector-v0.4.0:32f9af6097ad289dc1e26dbb321b160e9384ee03ad06b2799c21bccb7d125769
+    volumes:
+      - ./python/timeweaver_vllm:/workspace/GNUTimeWeaver/python/timeweaver_vllm:ro
+  campaign-runner:
+    entrypoint: ["python"]
+    environment:
+      G2_L0_RESULTS: /results/v040/${TIMEWEAVER_RUN_ID}/g2-a
+      G2_L0_FIXTURE: /results/v031/20260727T214500Z/g1-b/g1b-workloads-frozen.json
+    command: ["tools/g2_l0_runner.py"]

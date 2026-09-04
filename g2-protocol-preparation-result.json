@@ -1,10 +1,12 @@
 {
-  "preparation_status":"G2_PROTOCOL_PREPARATION_IN_PROGRESS",
+  "preparation_status":"G2_PROTOCOL_READY_NO_PAYLOAD_EXECUTION",
   "previous_protocol_id":"timeweaver-vllm-connector-v0.3.1:6921ad2fb55d44c18e4c52ed83be494031c47720ef2bd8f80182d91221000985",
   "previous_conclusion":"VLLM_EVENT_LINEAGE_VERIFIED_WITH_LIMITATIONS",
   "previous_g1_composite":{"path":"campaign-results/v031/20260728T050000Z/g1-c-hash-supplement/g1c-composite-verdict.json","sha256":"62d0350aaaa9e8bcac4e3514e21eedde134a309cd9e55fbcbbbc7b85dcf6a85e"},
   "new_protocol_version":"v0.4.0",
   "new_protocol_id":"timeweaver-vllm-connector-v0.4.0:d2c126b3976233e7ed1c3ca428c5fb78ac659003580a6993782d9a1230e448a1",
+  "preparation_protocol_id":"timeweaver-vllm-connector-v0.4.0:d2c126b3976233e7ed1c3ca428c5fb78ac659003580a6993782d9a1230e448a1",
+  "final_protocol_id_after_l0m2_instrumentation":"timeweaver-vllm-connector-v0.4.0:b68e8d815bbefbe0ffb7ad4065cc952145c08a4947858c8dbd8c48960cfe5236",
   "runtime_fingerprint":{"vllm_tag":"v0.23.0","vllm_commit":"0fc695fc6d1d82e9a5ac6835ac8e4e1c83703665","attention_backend":"CPU backend to be observed by G2-L0","model_runner":"CPU model runner","source_api_sha256":{"base.py":"5a87313dc9a2064702d8de808a6ad493374e069c704662dbe35fc2f1c9bd47e9","lmcache_connector.py":"ae9fa2de201a5df9329e2cf8900ebf3e4bee1f4ba8d6658b69c785bae86b339d","kv_connector_model_runner_mixin.py":"24008c05392ef08897cbb3261350663cf59f3fb4ad779d48d654dd9195ceafb6","kv_transfer_utils.py":"b41712c6f762d336a740c04402e8a5eb1302b0ec7bcd50ea2f23d007c03e7572","kv_cache_interface.py":"8d6be98bbf75b3d55007b64ccf5afef047ca01790a432522f70a196412c103d9","kv_cache_manager.py":"a69aa08062714b40b149648bbec031a42d22e422fbf9543cd10fbd12d2496edb","block_pool.py":"84755b84c36ed6460ceefe2690c9484a9c31488c5da6daa6c918f497d8837dee"}},
   "model_fingerprint":{"name":"Qwen/Qwen2.5-Coder-0.5B-Instruct","revision":"ea3f2471cf1b1f0db85067f1ef93848e38e88c25","config_sha256":"b1e58593cd31852f7da5c2fc31ddf6135b9c066c0fd9177a4bbe95717083adff","tokenizer_config_sha256":"959e7f1d9a1b7641a6d6ce05ca97b75c7894fcb66cbe5a040406458fb1128ee4"},
   "api_signatures":{"register_kv_caches":"(self, kv_caches: dict[str, torch.Tensor])","register_cross_layers_kv_cache":"(self, kv_cache: torch.Tensor, attn_backend: type[AttentionBackend])","save_kv_layer":"(self, layer_name: str, kv_layer: torch.Tensor, attn_metadata: AttentionMetadata, **kwargs: Any)","wait_for_save":"(self)","request_finished":"(self, request: Request, block_ids: list[int]) -> tuple[bool, dict[str, Any] | None]","get_finished":"(self, finished_req_ids: set[str]) -> tuple[set[str] | None, set[str] | None]","start_load_kv":"(self, forward_context: ForwardContext, **kwargs: Any) -> None","wait_for_layer_load":"(self, layer_name: str) -> None","get_num_new_matched_tokens":"(self, request: Request, num_computed_tokens: int) -> tuple[int | None, bool]"},
@@ -19,6 +21,7 @@
   "backpressure":"bounded queue/bytes/workers with G2_SAVE_BACKPRESSURE_LIMIT",
   "g2a_workload":"W0-E1: 924 tokens, 7 complete blocks, 28-token tail",
   "payload_execution":false,
+  "authorization":"G2A_ONE_REQUEST_PAYLOAD_SAVE_AUTHORIZED",
   "prohibited_claims":["KV payload saved","KV payload restored","external matched tokens","prefill avoided","zero-copy","GPU/VRAM validation"],
   "artifact_hashes":{"protocol_manifest":"d2c126b3976233e7ed1c3ca428c5fb78ac659003580a6993782d9a1230e448a1","connector.py":"e33c31c6a33f5212af4a4004558eab5ef3b8c00fbbe3acb0d244f486dfb10b50","workload":"dbe23e977d0093bb44be05ba3f1b432665eb00bf92bb7e0b591285baab6ffd42","object_schema":"55d80b75fde6f1afc8f1b729e6ee8d534388e894d37726aff54fb113d16d3013","manifest_schema":"ff33d1d7b6a683a4c790d3eaadb613798bc2ff27488880eaa6675614b5edc317"}
 }

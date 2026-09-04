@@ -1,0 +1,16 @@
+{
+  "status":"G2B_PROTOCOL_READY_NO_G2B_EXECUTION",
+  "authorization":"G2B1_CROSS_REQUEST_DEDUP_EXECUTION_AUTHORIZED",
+  "g2a_execution_protocol_id":"timeweaver-vllm-connector-v0.4.0:32f9af6097ad289dc1e26dbb321b160e9384ee03ad06b2799c21bccb7d125769",
+  "g2a_reported_preparation_id":"timeweaver-vllm-connector-v0.4.0:b68e8d815bbefbe0ffb7ad4065cc952145c08a4947858c8dbd8c48960cfe5236",
+  "g2b_preparation_protocol_id":"timeweaver-vllm-connector-v0.4.0:51736af3df9f1050e5e10dd87a11dbd1acb20b90afeffb7e81f2b4b7c47b75ad",
+  "compatibility_decision":"v0.4.0 retained",
+  "compatibility_rationale":"G2-B changes validation, journaling, dedup and recovery policy; object/manifest canonical formats remain unchanged",
+  "g2a_run":"20260728T120000Z",
+  "g2a_frozen_result":"G2A_REAL_KV_PAYLOAD_SAVE_VERIFIED_NO_RESTORE",
+  "gates":["G2B1_CROSS_REQUEST_DEDUP","G2B2_TRANSACTIONAL_FAULT_INJECTION","G2B3_CRASH_STAGING_RECOVERY","G2B4_FINAL_STORAGE_AUDIT"],
+  "load_restore_external_matching":false,
+  "execution_performed":false,
+  "artifact_fingerprint":"51736af3df9f1050e5e10dd87a11dbd1acb20b90afeffb7e81f2b4b7c47b75ad",
+  "prohibited":"G3 restore is not authorized"
+}

@@ -1,0 +1,94 @@
+{
+  "status": "G2B1_EXECUTION_PROTOCOL_FROZEN",
+  "protocol": "timeweaver-vllm-connector-v0.4.0",
+  "g2a_execution_protocol_id": "timeweaver-vllm-connector-v0.4.0:32f9af6097ad289dc1e26dbb321b160e9384ee03ad06b2799c21bccb7d125769",
+  "historical_preparation_fingerprint": "b68e8d815bbefbe0ffb7ad4065cc952145c08a4947858c8dbd8c48960cfe5236",
+  "legacy_g2a_run_manifest_value": "timeweaver-vllm-connector-v0.4.0:bbe620caaf25f4b70e2c3ef725824235148330a90913adfdef06746b46c8bc86",
+  "g2b1_execution_protocol_id": "timeweaver-vllm-connector-v0.4.0:0628d42ba2a9a900972c3cf23fb565ddff09312ae915d8c0e9f67f996233ecfe",
+  "artifacts": [
+    {
+      "relative_path": "python/timeweaver_vllm/connector.py",
+      "byte_length": 11998,
+      "sha256": "9b439ac2a0d421eff9056d509ed3f5745377bbc7d023ce020f3d7e3b4151fb79",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "schemas/v040-kv-object.schema.json",
+      "byte_length": 432,
+      "sha256": "55d80b75fde6f1afc8f1b729e6ee8d534388e894d37726aff54fb113d16d3013",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "schemas/v040-kv-block-manifest.schema.json",
+      "byte_length": 588,
+      "sha256": "ff33d1d7b6a683a4c790d3eaadb613798bc2ff27488880eaa6675614b5edc317",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "schemas/g2b-transaction-journal.schema.json",
+      "byte_length": 459,
+      "sha256": "b591827e5f7b6e312f825b60b9b0f8f8bed32b75560616cf903911bfe3cf063c",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "docs/protocols/g2b-dedup.md",
+      "byte_length": 434,
+      "sha256": "1568e8f76acabb2d6c8bd60d9af49d523fc4d0f0769a8d54ed3379eaa53dc767",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "docs/protocols/g2b-transaction-model.md",
+      "byte_length": 363,
+      "sha256": "0d0da237f5a2c796e56d653ee85cac6c9253967687c59bb19df100fe242def3e",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "docs/protocols/g2b-overview.md",
+      "byte_length": 494,
+      "sha256": "61629c92d4bfbcada5b80412626298ab8b5a4aa733510eb3645e755aeab15d1f",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "workloads/v040_g2b_workloads.json",
+      "byte_length": 320,
+      "sha256": "05a93834f3a20ddca9e0171a44724cdaa90b343288ab38859f296805fb281d74",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "tests/test_g2b_protocol.py",
+      "byte_length": 536,
+      "sha256": "5781997867ca2e6f3b14e3312ce272e5a8e5611efeb1f80bb01bc93aef427eef",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "tools/g2b_store_audit.py",
+      "byte_length": 272,
+      "sha256": "891950729f584c44e837c02baa1607430ee6433a44aad7f09f7c94bfc0e3aa76",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "tools/g2b_fault_runner.py",
+      "byte_length": 145,
+      "sha256": "2813861fd287974098ef0f168ab2815347971e5adb76dc866f05e78ba3807c9f",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    },
+    {
+      "relative_path": "campaign-results/v040/20260728T120000Z/g2-a/g2a-runtime-layout.json",
+      "byte_length": 180,
+      "sha256": "ef4d034da2b4961a164db80938bb817caeb42b34adf2069d006374575d6ffdf7",
+      "included_in_protocol_id": true,
+      "inclusion_rationale": "canonical G2-B1 implementation, format, workload, acceptance, test or frozen runtime input"
+    }
+  ]
+}

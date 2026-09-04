@@ -1,0 +1,2 @@
+from timeweaver_vllm.connector import TimeWeaverG2L0Metadata,TimeWeaverBlockMappingObservation,_canonical_meta
+e=tuple(TimeWeaverBlockMappingObservation('r',i,str(i),None,str(i),i+1,0,128,True) for i in range(7));m=TimeWeaverG2L0Metadata(generation=1,scheduler_step=1,engine_id='e',entries=e);assert m.canary=='TW-G2-L0M2';assert _canonical_meta(m)==_canonical_meta(m);assert 8 not in [x.physical_block_id for x in m.entries];print('G2L0M2_METADATA_SERIALIZATION_PREFLIGHT_PASSED')

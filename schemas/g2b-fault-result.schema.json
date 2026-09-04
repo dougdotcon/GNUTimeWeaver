@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"timeweaver-g2b-fault-result/1","type":"object","required":["fault_point","status","complete_manifest_published"],"properties":{"fault_point":{"type":"string"},"status":{"type":"string"},"complete_manifest_published":{"type":"boolean"},"objects_committed":{"type":"integer"}}}

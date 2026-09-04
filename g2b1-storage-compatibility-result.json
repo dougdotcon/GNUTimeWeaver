@@ -1,0 +1,47 @@
+{
+  "status": "G2B1_G2A_STORAGE_COMPATIBILITY_MISMATCH",
+  "g2a_storage_compatibility_fingerprint": "1ad65c78bc3fde1f1ff05a50e4e809fde0336f78922a4e685ee7e3eceee7a5e0",
+  "g2b1_storage_compatibility_fingerprint": "1ad65c78bc3fde1f1ff05a50e4e809fde0336f78922a4e685ee7e3eceee7a5e0",
+  "equal": false,
+  "missing_fields": [
+    "model_fingerprint",
+    "tokenizer_fingerprint",
+    "runtime_compatibility_fingerprint",
+    "attention_backend"
+  ],
+  "fields": {
+    "object_format": "timeweaver-vllm-kv-object/1",
+    "manifest_format": "timeweaver-vllm-kv-block-manifest/1",
+    "model_fingerprint": null,
+    "tokenizer_fingerprint": null,
+    "runtime_compatibility_fingerprint": null,
+    "attention_backend": null,
+    "kv_layout": {
+      "shape": [
+        2529,
+        2,
+        128,
+        128
+      ],
+      "stride": [
+        32768,
+        16384,
+        128,
+        1
+      ],
+      "block_axis": 0,
+      "layers": 24,
+      "bytes_per_layer_block": 65536
+    },
+    "block_size": 128,
+    "dtype": "torch.bfloat16",
+    "serialized_shape": [
+      2,
+      128,
+      128
+    ],
+    "endianness": "native",
+    "serialization_method": "raw_contiguous_tensor"
+  },
+  "source_object": "campaign-results/v040/20260728T120000Z/g2-a/kv4/objects/sha256/7d/4d/7d4ddb8c4321fc330faaa563541767d6a64b99018c913b778dc932a29293165f.twkv"
+}

@@ -1,0 +1,1 @@
+{"protocol":"timeweaver-vllm-connector-v0.4.0","workloads":{"B1-R0":"W0-E1","B1-R1":"W0-E1-identical","B1-R2":"six-shared-blocks-seventh-branch","B1-R3":"different-prefix"},"execution_authorized":false,"requests_serial":true,"expected":{"R0_objects":168,"R1_new_objects":0,"R1_reused_objects":168,"R2_shared_blocks":6}}
